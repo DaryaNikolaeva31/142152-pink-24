@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Дарья Николаева](https://up.htmlacademy.ru/adaptive/24/user/142152).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
