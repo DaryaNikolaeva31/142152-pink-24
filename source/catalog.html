@@ -43,6 +43,8 @@
   <main class="page-main">
     <section class="download">
       <h1 class="visually-hidden">Приложение для поднятия настроения</h1>
+      <img class="download__picture" src="img/phone.jpg" width="320" height="462"
+        alt="Взгляните на мир в розовых красках.">
       <p class="title">Взгляните на жизнь иначе!</p>
       <a class="download__button" href="#">
         Скачать приложение
@@ -65,7 +67,7 @@
           </a>
         </li>
       </ul>
-      <p class="download__subtitle subtitle">Доступно для iPhone, iPad, Android, Windows
+      <p class="subtitle subtitle--download">Доступно для iPhone, iPad, Android, Windows
         Phone, OS X, Windows 8</p>
     </section>
     <p class="title title--inverted">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
@@ -91,6 +93,7 @@
             новых</p>
         </li>
       </ul>
+      <img class="smile" src="img/phone-smile.jpg" width="157" height="320" alt="Пример использования приложения.">
     </section>
     <section class="information">
       <h2 class="visually-hidden">Интересная информация</h2>
@@ -113,57 +116,37 @@
     </section>
     <section class="price">
       <h2 class="visually-hidden">Прайс-лист</h2>
-      <table class="price-list">
-        <thead class="price-list__head">
-          <tr>
-            <th></th>
-            <th class="price-list__heading">
-              База<br>
-              <span class="price-list__prices">1,99 USD</span></th>
-            <th class="price-list__heading price-list__heading--hit">
-              Стандарт<br>
-              <span class="price-list__prices">3,99 USD</span></th>
-            <th class="price-list__heading">
-              Анлим<br>
-              <span class="price-list__prices">9,99 USD</span></th>
+      <table>
+        <thead>
+          <tr class="row-name">
+            <th class="hidden-cell"></th>
+            <th><b>База</b> 1,99 USD</th>
+            <th class="hit-cell"><b>Стандарт</b> 3,99 USD</th>
+            <th><b>Анлим</b> 9,99 USD</th>
           </tr>
         </thead>
-        <tbody class="price-list__main">
+        <tbody>
           <tr>
-            <td class="price-list__item price-list__item--title">Розовый фильтр</td>
-            <td class="price-list__item price-list__item--included">
-              <span class="visually-hidden">Эта опция включена в тариф "База" 1,99 USD</span>
-            </td>
-            <td class="price-list__item price-list__item--included">
-              <span class="visually-hidden">Эта опция включена в тариф "Стандарт" 3,99 USD</span>
-            </td>
-            <td class="price-list__item price-list__item--included">
-              <span class="visually-hidden">Эта опция включена в тариф "Анлим" 9,99 USD</span>
-            </td>
+            <td class="main-column">Розовый фильтр</td>
+            <td class="included"></td>
+            <td class="included"></td>
+            <td class="included"></td>
           </tr>
+        </tbody>
+        <tbody>
           <tr>
-            <td class="price-list__item price-list__item--title">Смайлики</td>
-            <td class="price-list__item price-list__item--excluded">
-              <span class="visually-hidden">Эта опция не включена в тариф "База" 1,99 USD</span>
-            </td>
-            <td class="price-list__item price-list__item--included">
-              <span class="visually-hidden">Эта опция включена в тариф "Стандарт" 3,99 USD</span>
-            </td>
-            <td class="price-list__item price-list__item--included">
-              <span class="visually-hidden">Эта опция включена в тариф "Анлим" 9,99 USD</span>
-            </td>
+            <td class="main-column">Смайлики</td>
+            <td class="excluded"></td>
+            <td class="included"></td>
+            <td class="included"></td>
           </tr>
+        </tbody>
+        <tbody>
           <tr>
-            <td class="price-list__item price-list__item--title">Комментарии</td>
-            <td class="price-list__item price-list__item--excluded">
-              <span class="visually-hidden">Эта опция не включена в тариф "База" 1,99 USD</span>
-            </td>
-            <td class="price-list__item price-list__item--excluded">
-              <span class="visually-hidden">Эта опция не включена в тариф "Стандарт" 3,99 USD</span>
-            </td>
-            <td class="price-list__item price-list__item--included">
-              <span class="visually-hidden">Эта опция включена в тариф "Анлим" 9,99 USD</span>
-            </td>
+            <td class="main-column">Комментарии</td>
+            <td class="excluded"></td>
+            <td class="excluded"></td>
+            <td class="included"></td>
           </tr>
         </tbody>
       </table>
