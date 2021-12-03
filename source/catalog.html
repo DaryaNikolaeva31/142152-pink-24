@@ -17,12 +17,12 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--current">
+        <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">
             Главная
           </a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--current">
           <a class="main-nav__link" href="catalog.html">
             Фотографии
           </a>
@@ -41,135 +41,126 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="title title--catalog">Фотографии
+    <h1 class="title">Фотографии
       пользователей</h1>
-    <section class="catalog-products">
+    <section class="catalog-photos">
       <h2 class="visually-hidden">Реальные фото пользователей, использующих приложение</h2>
-      <p class="catalog-products__opening-title">Взгляните на фотографии, которые выкладывают пользователи!
+      <p class="catalog-photos__opening-title">Взгляните на фотографии, которые выкладывают пользователи!
         Видите, как не хватает ваших?</p>
-      <ul class="product-list">
-        <li class="product-card">
-          <a class="product-card__link" href="#">
-            <img class="product-card__image" src="img/catalog/panorama-small.jpg" width="320" height="137"
+      <ul class="photo-list">
+        <li class="photo-list__card photo-card">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__image" src="img/catalog/panorama-small.jpg" width="320" height="137"
               alt="Панорамный вид с веревочной лестницы.">
           </a>
-          <h3 class="visually-hidden">Имя пользователя и время публикации</h3>
-          <p class="product-card__title">Анна</p>
-          <span class="product-card__text">(5 минут назад)</span>
-          <p class="product-card__description">Прыгать или нет? Напишите в
+          <h3 class="visually-hidden">Пост</h3>
+          <p class="photo-card__title">Анна</p>
+          <span class="photo-card__text">(5 минут назад)</span>
+          <p class="photo-card__description">Прыгать или нет? Напишите в
             комментарии свой совет и
             смотрите прямую трансляцию в
             перископе, задавайте свои вопросы!</p>
-          <p class="product-card__subtext">Нравится: 215</p>
+          <p class="photo-card__subtext">Нравится: 215</p>
         </li>
-        <li class="product-card">
-          <a class="product-card__link" href="#">
-            <img class="product-card__image" src="img/catalog/car-small.jpg" width="280" height="180" alt="Машина.">
+        <li class="photo-list__card photo-card">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__image" src="img/catalog/car-small.jpg" width="280" height="180" alt="Машина.">
           </a>
-          <h3 class="visually-hidden">Имя пользователя и время публикации</h3>
-          <p class="product-card__title">Левон</p>
-          <span class="product-card__text">(5 часов назад)</span>
-          <p class="product-card__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <p class="product-card__subtext">Нравится: 356</p>
+          <h3 class="visually-hidden">Пост</h3>
+          <p class="photo-card__title">Левон</p>
+          <span class="photo-card__text">(5 часов назад)</span>
+          <p class="photo-card__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="photo-card__subtext">Нравится: 356</p>
         </li>
-        <li class="product-card">
-          <a class="product-card__link" href="#">
-            <img class="product-card__image" src="img/catalog/drums-small.jpg" width="280" height="180" alt="Барабаны.">
+        <li class="photo-list__card photo-card">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__image" src="img/catalog/drums-small.jpg" width="280" height="180" alt="Барабаны.">
           </a>
-          <h3 class="visually-hidden">Имя пользователя и время публикации</h3>
-          <p class="product-card__title">Антон</p>
-          <span class="product-card__text">(12 часов назад)</span>
-          <p class="product-card__description">Соседи будут рады!</p>
-          <p class="product-card__subtext">Нравится: 666</p>
+          <h3 class="visually-hidden">Пост</h3>
+          <p class="photo-card__title">Антон</p>
+          <span class="photo-card__text">(12 часов назад)</span>
+          <p class="photo-card__description">Соседи будут рады!</p>
+          <p class="photo-card__subtext">Нравится: 666</p>
         </li>
-        <li class="product-card">
-          <a class="product-card__link" href="#">
-            <img class="product-card__image" src="img/catalog/windows-small.jpg" width="280" height="180" alt="Окна.">
+        <li class="photo-list__card photo-card">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__image" src="img/catalog/windows-small.jpg" width="280" height="180" alt="Окна.">
           </a>
-          <h3 class="visually-hidden">Имя пользователя и время публикации</h3>
-          <p class="product-card__title">Борис</p>
-          <span class="product-card__text">(20 часов назад)</span>
-          <p class="product-card__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <p class="product-card__subtext">Нравится: 215</p>
+          <h3 class="visually-hidden">Пост</h3>
+          <p class="photo-card__title">Борис</p>
+          <span class="photo-card__text">(20 часов назад)</span>
+          <p class="photo-card__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="photo-card__subtext">Нравится: 215</p>
         </li>
-        <li class="product-card">
-          <a class="product-card__link" href="#">
-            <img class="product-card__image" src="img/catalog/fair-small.jpg" width="280" height="180"
+        <li class="photo-list__card photo-card">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__image" src="img/catalog/fair-small.jpg" width="280" height="180"
               alt="Кубанская бахча.">
           </a>
-          <h3 class="visually-hidden">Имя пользователя и время публикации</h3>
-          <p class="product-card__title">Сергей</p>
-          <span class="product-card__text">(25 часов назад)</span>
-          <p class="product-card__description">Самая кубанская в мире!</p>
-          <p class="product-card__subtext">Нравится: 4</p>
+          <h3 class="visually-hidden">Пост</h3>
+          <p class="photo-card__title">Сергей</p>
+          <span class="photo-card__text">(25 часов назад)</span>
+          <p class="photo-card__description">Самая кубанская в мире!</p>
+          <p class="photo-card__subtext">Нравится: 4</p>
         </li>
-        <li class="product-card">
-          <a class="product-card__link" href="#">
-            <img class="product-card__image" src="img/catalog/legs-small.jpg" width="280" height="180" alt="Обрыв.">
+        <li class="photo-list__card photo-card">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__image" src="img/catalog/legs-small.jpg" width="280" height="180" alt="Обрыв.">
           </a>
-          <h3 class="visually-hidden">Имя пользователя и время публикации</h3>
-          <p class="product-card__title">Максим</p>
-          <span class="product-card__text">(40 часов назад)</span>
-          <p class="product-card__description">Где снег-то?</p>
-          <p class="product-card__subtext">Нравится: 150</p>
+          <h3 class="visually-hidden">Пост</h3>
+          <p class="photo-card__title">Максим</p>
+          <span class="photo-card__text">(40 часов назад)</span>
+          <p class="photo-card__description">Где снег-то?</p>
+          <p class="photo-card__subtext">Нравится: 150</p>
         </li>
-        <li class="product-card">
-          <a class="product-card__link" href="#">
-            <img class="product-card__image" src="img/catalog/plaine-small.jpg" width="280" height="180"
+        <li class="photo-list__card photo-card">
+          <a class="photo-card__link" href="#">
+            <img class="photo-card__image" src="img/catalog/plaine-small.jpg" width="280" height="180"
               alt="Крыло самолета.">
           </a>
-          <h3 class="visually-hidden">Имя пользователя и время публикации</h3>
-          <p class="product-card__title">Надежда</p>
-          <span class="product-card__text">(45 часов назад)</span>
-          <p class="product-card__description">Всем GM и взаимные лайки!</p>
-          <p class="product-card__subtext">Нравится: 2560</p>
+          <h3 class="visually-hidden">Пост</h3>
+          <p class="photo-card__title">Надежда</p>
+          <span class="photo-card__text">(45 часов назад)</span>
+          <p class="photo-card__description">Всем GM и взаимные лайки!</p>
+          <p class="photo-card__subtext">Нравится: 2560</p>
         </li>
       </ul>
     </section>
     <section class="post">
       <p class="post__title">Затмите их всех!
         Выкладывайте все, что накопилось в телефоне!</p>
-      <form class="post__form form" action="https://echo.htmlacademy.ru/" method="get">
-        <img class="form__image" src="img/catalog/road-small.jpg" width="280" height="374" alt="Cнежная дорога.">
-        <fieldset class="form__group">
-          <legend class="visually-hidden">Выберите фото для поста</legend>
-          <ul class="form-list">
-            <li class="form-list__item">
-              <div class="form-list__field">
-                <button class="form-list__button form-list__button--crop">
-                  <span class="visually-hidden">Выберите степень кадрирования изображения.</span>
-                </button>
-                <label class="form-list__scale form-list__scale--crop">
-                  <input type="range" min="0" max="100" step="1" value="80">
-                </label>
-              </div>
-            </li>
-            <li class="form-list__item">
-              <div class="form-list__field">
-                <button class="form-list__button form-list__button--fill">
-                  <span class="visually-hidden">Выберите степень заливки изображения.</span>
-                </button>
-                <label class="form-list__scale form-list__scale--fill">
-                  <input type="range" min="0" max="100" step="1" value="10">
-                </label>
-              </div>
-            </li>
-            <li class="form-list__item">
-              <div class="form-list__field">
-                <button class="form-list__button form-list__button--contrast">
-                  <span class="visually-hidden">Выберите степень заливки изображения.</span>
-                </button>
-                <label class="form-list__scale form-list__scale--contrast">
-                  <input type="range" min="0" max="100" step="1" value="10">
-                </label>
-              </div>
-            </li>
-          </ul>
-          <div class="form__buttons">
-            <button class="form__submit" type="submit">Запостить</button>
-            <button class="form__reset" type="reset">Отмена</button>
-          </div>
-          </fieldset>
+      <form class="post__form photo-post" action="https://echo.htmlacademy.ru/" method="post">
+        <img class="photo-post__image" src="img/catalog/road-small.jpg" width="280" height="374" alt="Cнежная дорога.">
+        <div class="post__tabs tabs" role="tablist">
+          <button class="tabs__tab" role="tab" aria-selected="true" aria-controls="crop-panel" id="crop-tab"
+            tabindex="0"></button>
+          <button class="tabs__tab" role="tab" aria-selected="true" aria-controls="fill-panel" id="fill-tab"
+            tabindex="-1"></button>
+          <button class="tabs__tab" role="tab" aria-selected="true" aria-controls="contrast-panel" id="contrast-tab"
+            tabindex="-1"></button>
+        </div>
+        <section class="post__content" role="tabpanel" tabindex="0" aria-labelledby="crop-tab" id="crop-panel">
+          <h2 class="visually-hidden">Выберите степень кадрирования изображения.</h2>
+          <label class="post__scale">
+            <input type="range" min="0" max="100" step="1" value="80" id="crop-tab">
+          </label>
+        </section>
+        <section class="post__content" role="tabpanel" tabindex="0" aria-labelledby="fill-tab" id="fill-panel">
+          <h2 class="visually-hidden">Выберите степень заливки изображения.</h2>
+          <label class="post__scale">
+            <input type="range" min="0" max="100" step="1" value="80" id="fill-tab">
+          </label>
+        </section>
+        <section class="post__content" role="tabpanel" tabindex="0" aria-labelledby="contrast-tab" id="contrast-panel">
+          <h2 class="visually-hidden">Выберите степень контраста изображения.</h2>
+          <label class="post__scale">
+            <input type="range" min="0" max="100" step="1" value="10" id="contrast-tab">
+          </label>
+        </section>
+        <div class="photo-post__buttons">
+          <button class="photo-post__submit" type="submit">Запостить</button>
+          <button class="photo-post__reset" type="reset">Отмена</button>
+        </div>
       </form>
     </section>
   </main>
