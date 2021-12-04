@@ -53,7 +53,6 @@
             <img class="photo-card__image" src="img/catalog/panorama-small.jpg" width="320" height="137"
               alt="Панорамный вид с веревочной лестницы.">
           </a>
-          <h3 class="visually-hidden">Пост</h3>
           <p class="photo-card__title">Анна</p>
           <span class="photo-card__text">(5 минут назад)</span>
           <p class="photo-card__description">Прыгать или нет? Напишите в
@@ -66,7 +65,6 @@
           <a class="photo-card__link" href="#">
             <img class="photo-card__image" src="img/catalog/car-small.jpg" width="280" height="180" alt="Машина.">
           </a>
-          <h3 class="visually-hidden">Пост</h3>
           <p class="photo-card__title">Левон</p>
           <span class="photo-card__text">(5 часов назад)</span>
           <p class="photo-card__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -76,7 +74,6 @@
           <a class="photo-card__link" href="#">
             <img class="photo-card__image" src="img/catalog/drums-small.jpg" width="280" height="180" alt="Барабаны.">
           </a>
-          <h3 class="visually-hidden">Пост</h3>
           <p class="photo-card__title">Антон</p>
           <span class="photo-card__text">(12 часов назад)</span>
           <p class="photo-card__description">Соседи будут рады!</p>
@@ -86,7 +83,6 @@
           <a class="photo-card__link" href="#">
             <img class="photo-card__image" src="img/catalog/windows-small.jpg" width="280" height="180" alt="Окна.">
           </a>
-          <h3 class="visually-hidden">Пост</h3>
           <p class="photo-card__title">Борис</p>
           <span class="photo-card__text">(20 часов назад)</span>
           <p class="photo-card__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -97,7 +93,6 @@
             <img class="photo-card__image" src="img/catalog/fair-small.jpg" width="280" height="180"
               alt="Кубанская бахча.">
           </a>
-          <h3 class="visually-hidden">Пост</h3>
           <p class="photo-card__title">Сергей</p>
           <span class="photo-card__text">(25 часов назад)</span>
           <p class="photo-card__description">Самая кубанская в мире!</p>
@@ -107,7 +102,6 @@
           <a class="photo-card__link" href="#">
             <img class="photo-card__image" src="img/catalog/legs-small.jpg" width="280" height="180" alt="Обрыв.">
           </a>
-          <h3 class="visually-hidden">Пост</h3>
           <p class="photo-card__title">Максим</p>
           <span class="photo-card__text">(40 часов назад)</span>
           <p class="photo-card__description">Где снег-то?</p>
@@ -118,7 +112,6 @@
             <img class="photo-card__image" src="img/catalog/plaine-small.jpg" width="280" height="180"
               alt="Крыло самолета.">
           </a>
-          <h3 class="visually-hidden">Пост</h3>
           <p class="photo-card__title">Надежда</p>
           <span class="photo-card__text">(45 часов назад)</span>
           <p class="photo-card__description">Всем GM и взаимные лайки!</p>
@@ -131,29 +124,31 @@
         Выкладывайте все, что накопилось в телефоне!</p>
       <form class="post__form photo-post" action="https://echo.htmlacademy.ru/" method="post">
         <img class="photo-post__image" src="img/catalog/road-small.jpg" width="280" height="374" alt="Cнежная дорога.">
-        <div class="post__tabs tabs" role="tablist">
-          <button class="tabs__tab" role="tab" aria-selected="true" aria-controls="crop-panel" id="crop-tab"
-            tabindex="0"></button>
-          <button class="tabs__tab" role="tab" aria-selected="true" aria-controls="fill-panel" id="fill-tab"
-            tabindex="-1"></button>
-          <button class="tabs__tab" role="tab" aria-selected="true" aria-controls="contrast-panel" id="contrast-tab"
-            tabindex="-1"></button>
+        <div class="photo-post__tabs tabs" role="tablist">
+          <button class="tabs__tab" role="tab" aria-selected="true" aria-controls="crop-panel" id="crop-tab">
+            <span class="visually-hidden">Кадрирование изображения</span>
+          </button>
+          <button class="tabs__tab" role="tab" aria-selected="false" aria-controls="fill-panel" id="fill-tab">
+            <span class="visually-hidden">Заливка изображения</span>
+          </button>
+          <button class="tabs__tab" role="tab" aria-selected="false" aria-controls="contrast-panel" id="contrast-tab">
+            <span class="visually-hidden">Контраст изображения</span>
+          </button>
         </div>
-        <section class="post__content" role="tabpanel" tabindex="0" aria-labelledby="crop-tab" id="crop-panel">
-          <h2 class="visually-hidden">Выберите степень кадрирования изображения.</h2>
-          <label class="post__scale">
+          <label class="photo-post__scale">
+            <span class="visually-hidden">Выберите степень кадрирования изображения.</span>
             <input type="range" min="0" max="100" step="1" value="80" id="crop-tab">
           </label>
-        </section>
-        <section class="post__content" role="tabpanel" tabindex="0" aria-labelledby="fill-tab" id="fill-panel">
-          <h2 class="visually-hidden">Выберите степень заливки изображения.</h2>
-          <label class="post__scale">
+          <label class="photo-post__scale">
+            <span class="visually-hidden">Выберите степень заливки изображения.</span>
             <input type="range" min="0" max="100" step="1" value="80" id="fill-tab">
           </label>
         </section>
-        <section class="post__content" role="tabpanel" tabindex="0" aria-labelledby="contrast-tab" id="contrast-panel">
+        <section class="photo-post__content" role="tabpanel" tabindex="0" aria-labelledby="contrast-tab"
+          id="contrast-panel">
           <h2 class="visually-hidden">Выберите степень контраста изображения.</h2>
-          <label class="post__scale">
+          <label class="photo-post__scale">
+            <span class="visually-hidden">Выберите степень контраста изображения.</span>
             <input type="range" min="0" max="100" step="1" value="10" id="contrast-tab">
           </label>
         </section>
