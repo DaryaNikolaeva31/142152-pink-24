@@ -4,7 +4,7 @@
   line-height: 29px;
   text-align: center;
   color: #ffffff;
-  background-image: url("/source/img/phone.jpeg");
+  background-image: url("../img/phone.jpeg");
   background-color: #1d2631;
   background-repeat: no-repeat;
 }
@@ -42,15 +42,15 @@
 
 
 .download__item--ios {
-  background-image: url("/source/img/apple-logo.svg");
+  background-image: url("../img/apple-logo.svg");
 }
 
 .download__item--android {
-  background-image: url("/source/img/android-logo.svg");
+  background-image: url("../img/android-logo.svg");
 }
 
 .download__item--microsoft {
-  background-image: url("/source/img/microsoft-logo.svg");
+  background-image: url("../img/microsoft-logo.svg");
 }
 
 .download__subtitle {
