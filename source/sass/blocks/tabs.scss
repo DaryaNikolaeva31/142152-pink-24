@@ -1,0 +1,34 @@
+.tabs__tab {
+  border: none;
+  margin-bottom: 39px;
+  margin-top: 43px;
+}
+
+.tabs__tab:not(:last-child) {
+  margin-right: 35px;
+}
+
+.tabs__tab:first-child {
+  margin-left: 37px;
+}
+
+.tabs__tab--crop {
+  background-image: url("../img/crop.svg");
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 44px;
+}
+
+.tabs__tab--fill {
+  background-image: url("../img/fill.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 43px;
+}
+
+.tabs__tab--contrast {
+  background-image: url("../img/contrast.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}
