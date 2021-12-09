@@ -1,0 +1,41 @@
+.modal {
+  /*display: none;*/
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+}
+
+.modal-content {
+  height: 100%;
+}
+
+.modal__heading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  padding-top: 44px;
+  padding-bottom: 37px;
+}
+
+.modal__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.modal__text--success {
+  padding-right: 27px;
+  padding-left: 27px;
+}
+
+.modal__button {
+  margin-bottom: 52px;
+  margin-right: 22px;
+  margin-left: 22px;
+  margin-top: 50px;
+}
+
+.modal__button--success {
+  margin-top: 52px;
+}

@@ -1,0 +1,46 @@
+
+.main-nav {
+  width: 320px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  margin: 0;
+}
+
+.main-nav__toggle {
+  background-image: url("/source/img/open-menu-btn.svg");
+  background-size: 50px 24px;
+  background-repeat: no-repeat;
+  background-color: #283645;
+  width: 50px;
+  height: 24px;
+  margin-left: auto;
+  border: none;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.main-nav__item {
+  width: 100%;
+  min-height: 63px;
+  background-color: #283645;
+  display: grid;
+  place-content: center;
+}
+
+.main-nav__link {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #ffffff;
+}

@@ -1,0 +1,34 @@
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.reviews__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+.reviews__description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+}
+
+.reviews__subtitle {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+}

@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
 </head>
 
@@ -41,9 +43,9 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="title">Фотографии
-      пользователей</h1>
     <section class="catalog-photos">
+      <h1 class="title">Фотографии
+        пользователей</h1>
       <h2 class="visually-hidden">Реальные фото пользователей, использующих приложение</h2>
       <p class="catalog-photos__opening-title">Взгляните на фотографии, которые выкладывают пользователи!
         Видите, как не хватает ваших?</p>
@@ -120,7 +122,7 @@
       </ul>
     </section>
     <section class="post">
-      <p class="post__title">Затмите их всех!
+      <p class="post__title">Затмите их всех!<br>
         Выкладывайте все, что накопилось в телефоне!</p>
       <form class="post__form photo-post" action="https://echo.htmlacademy.ru/" method="post">
         <img class="photo-post__image" src="img/catalog/road-small.jpg" width="280" height="374" alt="Cнежная дорога.">
@@ -135,23 +137,18 @@
             <span class="visually-hidden">Контраст изображения</span>
           </button>
         </div>
-          <label class="photo-post__scale">
-            <span class="visually-hidden">Выберите степень кадрирования изображения.</span>
-            <input type="range" min="0" max="100" step="1" value="80" id="crop-tab">
-          </label>
-          <label class="photo-post__scale">
-            <span class="visually-hidden">Выберите степень заливки изображения.</span>
-            <input type="range" min="0" max="100" step="1" value="80" id="fill-tab">
-          </label>
-        </section>
-        <section class="photo-post__content" role="tabpanel" tabindex="0" aria-labelledby="contrast-tab"
-          id="contrast-panel">
-          <h2 class="visually-hidden">Выберите степень контраста изображения.</h2>
-          <label class="photo-post__scale">
-            <span class="visually-hidden">Выберите степень контраста изображения.</span>
-            <input type="range" min="0" max="100" step="1" value="10" id="contrast-tab">
-          </label>
-        </section>
+        <label class="photo-post__scale">
+          <span class="visually-hidden">Выберите степень кадрирования изображения.</span>
+          <input type="range" min="0" max="100" step="1" value="80" id="crop-tab">
+        </label>
+        <label class="photo-post__scale">
+          <span class="visually-hidden">Выберите степень заливки изображения.</span>
+          <input type="range" min="0" max="100" step="1" value="10" id="fill-tab">
+        </label>
+        <label class="photo-post__scale">
+          <span class="visually-hidden">Выберите степень контраста изображения.</span>
+          <input type="range" min="0" max="100" step="1" value="50" id="contrast-tab">
+        </label>
         <div class="photo-post__buttons">
           <button class="photo-post__submit" type="submit">Запостить</button>
           <button class="photo-post__reset" type="reset">Отмена</button>
@@ -167,17 +164,17 @@
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social__list">
-        <li class="footer-social__item">
+        <li class="footer-social__item footer-social__item--twitter">
           <a class="footer-social__link" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Твиттер</span>
           </a>
         </li>
-        <li class="footer-social__item">
+        <li class="footer-social__item footer-social__item--facebook">
           <a class="footer-social__link" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li class="footer-social__item">
+        <li class="footer-social__item footer-social__item--youtube">
           <a class="footer-social__link" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>

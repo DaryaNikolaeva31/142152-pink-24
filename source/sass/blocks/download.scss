@@ -1,0 +1,65 @@
+.download {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  background-image: url("/source/img/phone.jpeg");
+  background-color: #1d2631;
+  background-repeat: no-repeat;
+}
+
+.download__button {
+  width: 280px;
+  min-height: 55px;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.download__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 58px;
+  padding-right: 58px;
+  padding-top: 58px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download__item {
+  width: 33.33%;
+  padding-top: 32px;
+  padding-bottom: 28px;
+  margin: 0;
+  background-repeat: no-repeat;
+}
+
+
+
+.download__item--ios {
+  background-image: url("/source/img/apple-logo.svg");
+}
+
+.download__item--android {
+  background-image: url("/source/img/android-logo.svg");
+}
+
+.download__item--microsoft {
+  background-image: url("/source/img/microsoft-logo.svg");
+}
+
+.download__subtitle {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 38px;
+}

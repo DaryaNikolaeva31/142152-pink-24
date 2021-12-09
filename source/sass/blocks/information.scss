@@ -1,0 +1,27 @@
+.information {
+  background-image: url("/source/img/24.svg");
+  background-repeat: no-repeat;
+}
+
+.information__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+.information__description {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.information__link {
+  text-decoration-line: underline;
+  color: #d22856;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}

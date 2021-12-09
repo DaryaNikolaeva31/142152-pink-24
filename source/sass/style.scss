@@ -1,1 +1,47 @@
 // Начните писать стили здесь
+
+//Global
+@import "./global/global";
+@import "./global/variables";
+@import "./fonts.scss";
+
+// Components
+
+@import "./blocks/page-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/download.scss";
+@import "./blocks/title.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/information.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/price.scss";
+@import "./blocks/price-list.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/footer-social.scss";
+@import "./blocks/footer-developer.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/catalog-photos.scss";
+@import "./blocks/photo-list.scss";
+@import "./blocks/photo-card.scss";
+@import "./blocks/post.scss";
+@import "./blocks/photo-post.scss";
+@import "./blocks/tabs.scss";
+@import "./blocks/contest.scss";
+@import "./blocks/post-form.scss";
+@import "./blocks/form-group.scss";
+@import "./blocks/field.scss";
+@import "./blocks/form-сheckbox.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/form-radio.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/button.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/modal-failed.scss";
+@import "./blocks/modal-success.scss";
+
+
+
+
+
+
