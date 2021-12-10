@@ -27,27 +27,35 @@
   padding-top: 58px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
 }
 
 .download__item {
-  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 32px;
   padding-bottom: 28px;
   margin: 0;
-  background-repeat: no-repeat;
+  width: 47px;
+  height: 56px;
 }
 
-.download__item--ios {
+.download__link {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.download__link--ios {
   background-image: url("../img/apple-logo.svg");
 }
 
-.download__item--android {
+.download__link--android {
   background-image: url("../img/android-logo.svg");
 }
 
-.download__item--microsoft {
+.download__link--microsoft {
   background-image: url("../img/microsoft-logo.svg");
 }
 
