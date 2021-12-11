@@ -1,9 +1,9 @@
 .page-header {
-  color: #ffffff;
-  font-weight: bold;
+  color: $white;
+  font-weight: 700;
   font-size: 18px;
   line-height: 32px;
-  background-color: #283645;
+  background-color: $text-black;
 }
 
 .page-header__logo {
@@ -11,7 +11,7 @@
   padding-left: 20px;
   padding-top: 22px;
   padding-bottom: 21px;
-  color: #ffffff;
+  color: $white;
   background-image: url("../img/blue-background.jpeg");
   background-repeat: no-repeat;
   background-size: 320px 66px;

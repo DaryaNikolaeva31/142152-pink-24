@@ -1,17 +1,17 @@
 .catalog-photos {
   line-height: 33px;
-  color: #283645;
+  color: $text-black;
   background-image: url("../img/back-mobile.jpg");
-  background-color: #ffffff;
+  background-color: $white;
   background-repeat: no-repeat;
   background-size: 320px 462px;
 }
 
 .catalog-photos__opening-title {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  background-color: #ffffff;
+  background-color: $white;
   text-align: center;
-  color: #283645;
+  color: $text-black;
 }

@@ -3,24 +3,22 @@
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   background-image: url("../img/phone.jpeg");
-  background-color: #1d2631;
+  background-color: $blue-charcoal;
   background-repeat: no-repeat;
 }
 
 .download__button {
   width: 280px;
   min-height: 55px;
-  border: 3px solid #ffffff;
+  border: 3px solid $white;
   border-radius: 29px;
-  color: #ffffff;
-  margin-top: 50px;
+  color: $white;
 }
 
 .download__list {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   padding-left: 58px;
   padding-right: 58px;
@@ -36,13 +34,11 @@
   justify-content: center;
   padding-top: 32px;
   padding-bottom: 28px;
-  margin: 0;
-  width: 47px;
-  height: 56px;
 }
 
 .download__link {
   display: block;
+  width: 47px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -60,12 +56,11 @@
 }
 
 .download__subtitle {
-  margin: 0;
   padding: 0;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  color: #ffffff;
+  color: $white;
   text-align: center;
   padding-top: 38px;
 }

@@ -4,24 +4,24 @@
 }
 
 .information__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 30px;
   line-height: 30px;
   text-align: center;
-  color: #000000;
+  color: $black;
 }
 
 .information__description {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: #283645;
+  color: $text-black;
 }
 
 .information__link {
   text-decoration-line: underline;
   color: $raspberry;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
 }

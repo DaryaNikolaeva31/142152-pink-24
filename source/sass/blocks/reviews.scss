@@ -5,24 +5,23 @@
 
 .reviews__list {
   list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 
 .reviews__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
-  color: #000000;
+  color: $black;
 }
 
 .reviews__description {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  color: #283645;
+  color: $text-black;
 }
 
 .reviews__subtitle {
@@ -30,5 +29,5 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  color: #283645;
+  color: $text-black;
 }

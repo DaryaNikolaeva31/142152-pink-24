@@ -1,17 +1,14 @@
 .field__input {
   width: 276px;
-  height: 59px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $whisper;
   border-radius: 1px;
-  margin-top: 17px;
   padding-left: 20px;
   font-size: 18px;
   line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .field__input--comment {
-  min-height: 197px;
   padding-left: 20px;
   padding-top: 22px;
-  font-family: "Open Sans", "Arial", sans-serif;
 }

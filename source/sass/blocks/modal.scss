@@ -9,11 +9,11 @@
 }
 
 .modal__heading {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  color: #000000;
+  color: $black;
   padding-top: 44px;
   padding-bottom: 37px;
 }
@@ -29,15 +29,4 @@
 .modal__text--success {
   padding-right: 27px;
   padding-left: 27px;
-}
-
-.modal__button {
-  margin-bottom: 52px;
-  margin-right: 22px;
-  margin-left: 22px;
-  margin-top: 50px;
-}
-
-.modal__button--success {
-  margin-top: 52px;
 }

@@ -1,10 +1,10 @@
 .button {
-  background: #2aab6d;
-  border: 2px solid #2aab6d;
+  background: $green-800;
+  border: 2px solid $green-800;
   border-radius: 1px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
 }
