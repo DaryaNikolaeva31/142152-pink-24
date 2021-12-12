@@ -1,0 +1,20 @@
+.form-group__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.form-group__heading {
+  text-transform: uppercase;
+  color: $raspberry;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form-group__field {
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  color: $raspberry;
+  text-transform: uppercase;
+}

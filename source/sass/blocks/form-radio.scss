@@ -1,0 +1,16 @@
+.form-radio {
+  background-color: $grey;
+}
+
+.form-radio__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.form-radio__heading {
+  text-transform: uppercase;
+  color: $raspberry;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}

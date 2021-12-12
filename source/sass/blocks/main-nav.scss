@@ -1,0 +1,40 @@
+.main-nav {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+}
+
+.main-nav__toggle {
+  background-image: url("../img/open-menu-btn.svg");
+  background-size: 50px 24px;
+  background-repeat: no-repeat;
+  background-color: $text-black;
+  width: 50px;
+  height: 24px;
+  border: none;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+}
+
+.main-nav__item {
+  width: 100%;
+  background-color: $text-black;
+  display: grid;
+  place-content: center;
+}
+
+.main-nav__link {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: $white;
+}

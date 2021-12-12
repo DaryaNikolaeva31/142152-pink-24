@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
 </head>
 
@@ -41,8 +43,10 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="title">Фотографии
-      пользователей</h1>
+    <div class="text-block">
+      <h1 class="title">Фотографии
+        пользователей</h1>
+    </div>
     <section class="catalog-photos">
       <h2 class="visually-hidden">Реальные фото пользователей, использующих приложение</h2>
       <p class="catalog-photos__opening-title">Взгляните на фотографии, которые выкладывают пользователи!
@@ -125,33 +129,31 @@
       <form class="post__form photo-post" action="https://echo.htmlacademy.ru/" method="post">
         <img class="photo-post__image" src="img/catalog/road-small.jpg" width="280" height="374" alt="Cнежная дорога.">
         <div class="photo-post__tabs tabs" role="tablist">
-          <button class="tabs__tab" role="tab" aria-selected="true" aria-controls="crop-panel" id="crop-tab">
+          <button class="tabs__tab tabs__tab--crop" role="tab" aria-selected="true" aria-controls="crop-panel"
+            id="crop-tab">
             <span class="visually-hidden">Кадрирование изображения</span>
           </button>
-          <button class="tabs__tab" role="tab" aria-selected="false" aria-controls="fill-panel" id="fill-tab">
+          <button class="tabs__tab tabs__tab--fill" role="tab" aria-selected="false" aria-controls="fill-panel"
+            id="fill-tab">
             <span class="visually-hidden">Заливка изображения</span>
           </button>
-          <button class="tabs__tab" role="tab" aria-selected="false" aria-controls="contrast-panel" id="contrast-tab">
+          <button class="tabs__tab tabs__tab--contrast" role="tab" aria-selected="false" aria-controls="contrast-panel"
+            id="contrast-tab">
             <span class="visually-hidden">Контраст изображения</span>
           </button>
         </div>
-          <label class="photo-post__scale">
-            <span class="visually-hidden">Выберите степень кадрирования изображения.</span>
-            <input type="range" min="0" max="100" step="1" value="80" id="crop-tab">
-          </label>
-          <label class="photo-post__scale">
-            <span class="visually-hidden">Выберите степень заливки изображения.</span>
-            <input type="range" min="0" max="100" step="1" value="80" id="fill-tab">
-          </label>
-        </section>
-        <section class="photo-post__content" role="tabpanel" tabindex="0" aria-labelledby="contrast-tab"
-          id="contrast-panel">
-          <h2 class="visually-hidden">Выберите степень контраста изображения.</h2>
-          <label class="photo-post__scale">
-            <span class="visually-hidden">Выберите степень контраста изображения.</span>
-            <input type="range" min="0" max="100" step="1" value="10" id="contrast-tab">
-          </label>
-        </section>
+        <label class="photo-post__scale">
+          <span class="visually-hidden">Выберите степень кадрирования изображения.</span>
+          <input type="range" min="0" max="100" step="1" value="80" id="crop-tab">
+        </label>
+        <label class="photo-post__scale">
+          <span class="visually-hidden">Выберите степень заливки изображения.</span>
+          <input type="range" min="0" max="100" step="1" value="10" id="fill-tab">
+        </label>
+        <label class="photo-post__scale">
+          <span class="visually-hidden">Выберите степень контраста изображения.</span>
+          <input type="range" min="0" max="100" step="1" value="50" id="contrast-tab">
+        </label>
         <div class="photo-post__buttons">
           <button class="photo-post__submit" type="submit">Запостить</button>
           <button class="photo-post__reset" type="reset">Отмена</button>
@@ -168,17 +170,17 @@
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social__list">
         <li class="footer-social__item">
-          <a class="footer-social__link" href="https://twitter.com/htmlacademy_ru">
+          <a class="footer-social__link footer-social__link--twitter" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Твиттер</span>
           </a>
         </li>
         <li class="footer-social__item">
-          <a class="footer-social__link" href="https://www.facebook.com/htmlacademy">
+          <a class="footer-social__link footer-social__link--facebook" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="footer-social__item">
-          <a class="footer-social__link" href="#">
+          <a class="footer-social__link footer-social__link--youtube" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>

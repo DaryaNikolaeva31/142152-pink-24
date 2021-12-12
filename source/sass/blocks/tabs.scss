@@ -1,0 +1,19 @@
+.tabs__tab {
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 48px;
+  height: 48px;
+}
+
+.tabs__tab--crop {
+  background-image: url("../img/crop.svg");
+}
+
+.tabs__tab--fill {
+  background-image: url("../img/fill.svg");
+}
+
+.tabs__tab--contrast {
+  background-image: url("../img/contrast.svg");
+}

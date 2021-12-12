@@ -1,0 +1,14 @@
+.photo-card {
+  background-color: $grey;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo-card__title {
+  font-weight: 700;
+}
+
+.photo-card__text {
+  text-transform: uppercase;
+}
