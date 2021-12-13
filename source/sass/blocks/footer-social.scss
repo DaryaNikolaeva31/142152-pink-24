@@ -4,11 +4,12 @@
 }
 
 .footer-social__list {
-  list-style-type: none;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 0;
+  margin: 0;
   padding-left: 74px;
 }
 
@@ -16,18 +17,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
 }
 
 .footer-social__link {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
-  color: $raspberry;
-  border: 3px solid $text-black;
+  color: $cerise;
+  border: 3px solid $midnight;
   border-radius: 50%;
   padding: 20px;
+  width: 48px;
+  height: 48px;
 }
 
 .footer-social__link--twitter {

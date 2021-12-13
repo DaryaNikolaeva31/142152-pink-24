@@ -3,7 +3,7 @@
 }
 
 .contacts__list {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -13,12 +13,12 @@
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  color: $text-black;
+  color: $midnight;
   padding: 0;
 }
 
 .contacts__description {
-  color: $raspberry;
+  color: $cerise;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
