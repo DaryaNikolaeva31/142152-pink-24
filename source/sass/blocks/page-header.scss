@@ -4,6 +4,7 @@
   font-size: 18px;
   line-height: 32px;
   background-color: $midnight;
+  position: relative;
 }
 
 .page-header__logo {
@@ -12,7 +13,28 @@
   padding-top: 22px;
   padding-bottom: 21px;
   color: $white;
+  background-color: $midnight;
   background-image: url("../img/blue-background.jpeg");
   background-repeat: no-repeat;
   background-size: 320px 66px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    min-height: 110px;
+  }
+
+  .page-header__logo {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }

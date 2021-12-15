@@ -1,6 +1,16 @@
 .footer-social {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 41px;
+  padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 39px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    padding-bottom: 75px;
+  }
 }
 
 .footer-social__list {
@@ -11,12 +21,21 @@
   padding: 0;
   margin: 0;
   padding-left: 74px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 240px;
+  }
 }
 
 .footer-social__item {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 14px;
 }
 
 .footer-social__link {

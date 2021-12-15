@@ -1,4 +1,17 @@
 .price {
-  padding-bottom: 4px;
-  padding-top: 83px;
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: $white-smoke;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 159px;
+    padding-bottom: 98px;
+  }
 }

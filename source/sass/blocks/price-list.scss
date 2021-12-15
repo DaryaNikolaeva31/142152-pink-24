@@ -1,7 +1,92 @@
 .price-list {
-  text-transform: uppercase;
   color: $midnight;
-  line-height: 30px;
   background-color: $white;
   border: 2px solid $whisper;
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    padding: 70px 20px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.price-list__heading:not(:first-child) {
+  background-color: $midnight;
+  color: $white;
+  text-transform: uppercase;
+  width: 276px;
+  height: 94px;
+  border: 2px solid $whisper;
+  border-collapse: collapse;
+  font-size: 16px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 152px;
+    height: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 233px;
+    height: 94px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.price-list__prices {
+  font-weight: 300;
+}
+
+.price-list__item {
+  border: 2px solid $whisper;
+  width: 276px;
+  height: 59px;
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 152px;
+    height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 234px;
+    height: 59px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.price-list__item--title {
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 22px;
+  }
+}
+
+.price-list__heading--hit {
+  background-image: url("/source/img/hit.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 61px;
+  height: 61px;
+}
+
+.price-list__item--included {
+  background-image: url("/source/img/yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 31px;
+  height: 21px;
 }
