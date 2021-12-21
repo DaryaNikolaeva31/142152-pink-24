@@ -5,13 +5,8 @@
   border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
-    width: 620px;
     padding: 70px 20px;
     margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 940px;
   }
 }
 
@@ -20,7 +15,6 @@
   color: $white;
   text-transform: uppercase;
   width: 276px;
-  height: 94px;
   border: 2px solid $whisper;
   border-collapse: collapse;
   font-size: 16px;
@@ -28,12 +22,10 @@
 
   @media (min-width: $tablet-width) {
     width: 152px;
-    height: 75px;
   }
 
   @media (min-width: $desktop-width) {
     width: 233px;
-    height: 94px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -46,28 +38,42 @@
 .price-list__item {
   border: 2px solid $whisper;
   width: 276px;
-  height: 59px;
   font-size: 14px;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
     width: 152px;
-    height: 45px;
   }
 
   @media (min-width: $desktop-width) {
     width: 234px;
-    height: 59px;
     font-size: 18px;
     line-height: 30px;
   }
 }
 
+.price-list__title {
+  @media (max-width: $mobile-width-only) {
+    display: table-cell;
+    padding-left: 22px;
+    padding-top: 18px;
+    padding-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .price-list__item--title {
-  padding-left: 20px;
+  display: none;
 
   @media (min-width: $tablet-width) {
     padding-left: 15px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    display: table-cell;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,18 +81,16 @@
   }
 }
 
-.price-list__heading--hit {
-  background-image: url("/source/img/hit.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 61px;
-  height: 61px;
+.price-list__heading--invisible {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+  }
 }
 
-.price-list__item--included {
-  background-image: url("/source/img/yes.svg");
+.price-list__heading--hit {
+  background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  width: 31px;
-  height: 21px;
+  background-position: 0 0;
 }

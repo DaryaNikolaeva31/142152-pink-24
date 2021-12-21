@@ -5,7 +5,10 @@
   background-color: $white-smoke;
 
   @media (min-width: $tablet-width) {
-    padding: 70px 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,4 +17,21 @@
     padding-top: 159px;
     padding-bottom: 98px;
   }
+}
+
+.price__table {
+  width: 840px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.price__wrapper {
+  display: grid;
+  justify-content: center;
 }

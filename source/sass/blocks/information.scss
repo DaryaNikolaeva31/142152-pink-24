@@ -12,6 +12,8 @@
   font-size: 30px;
   line-height: 30px;
   color: $black;
+  padding-top: 102px;
+  padding-bottom: 24px;
 }
 
 .information__description {
@@ -19,6 +21,7 @@
   font-size: 18px;
   line-height: 30px;
   color: $midnight;
+  padding-bottom: 24px;
 }
 
 .information__link {
@@ -27,30 +30,17 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  padding-bottom: 29px;
 }
 
 @media (min-width: $tablet-width) {
   .information {
     display: block;
   }
-
-  .information__title {
-    padding-top: 102px;
-    padding-bottom: 24px;
-  }
-
-  .information__description {
-    padding-bottom: 24px;
-  }
-
-  .information__link {
-    padding-bottom: 29px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .information {
-    display: block;
     padding-left: 131px;
     padding-right: 166px;
   }
