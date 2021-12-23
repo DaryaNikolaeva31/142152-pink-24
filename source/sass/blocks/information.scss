@@ -3,8 +3,6 @@
   background-image: url("../img/24.svg");
   background-repeat: no-repeat;
   text-align: left;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .information__title {
@@ -40,11 +38,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .information {
-    padding-left: 131px;
-    padding-right: 166px;
-  }
-
   .information__title {
     padding-top: 115px;
     padding-bottom: 37px;
