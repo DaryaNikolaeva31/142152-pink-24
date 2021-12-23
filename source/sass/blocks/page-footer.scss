@@ -4,5 +4,20 @@
 }
 
 .page-footer__logo {
-  padding-left: 88px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: grid;
+    grid-template-columns: 190px 1fr 190px;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    padding: 0;
+  }
 }

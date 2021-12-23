@@ -1,17 +1,18 @@
 .form-сheckbox {
-  background-color: $grey;
+  background-color: $white-smoke;
 }
 
 .form-сheckbox__list {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .form-сheckbox__heading {
   text-transform: uppercase;
-  color: $raspberry;
+  color: $cerise;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
-  background-color: $grey;
+  background-color: $white-smoke;
 }

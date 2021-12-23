@@ -1,27 +1,53 @@
 .information {
+  display: none;
   background-image: url("../img/24.svg");
   background-repeat: no-repeat;
+  text-align: left;
 }
 
 .information__title {
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
-  text-align: center;
   color: $black;
+  padding-top: 102px;
+  padding-bottom: 24px;
 }
 
 .information__description {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: $text-black;
+  color: $midnight;
+  padding-bottom: 24px;
 }
 
 .information__link {
   text-decoration-line: underline;
-  color: $raspberry;
+  color: $cerise;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  padding-bottom: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .information {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .information__title {
+    padding-top: 115px;
+    padding-bottom: 37px;
+  }
+
+  .information__description {
+    padding-bottom: 47px;
+  }
+
+  .information__link {
+    padding-bottom: 120px;
+  }
 }

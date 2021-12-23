@@ -1,16 +1,16 @@
 .title {
-  padding: 0;
   text-align: center;
   color: $white;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  padding-bottom: 320px;
+  padding-top: 50px;
+  padding-bottom: 45px;
   padding-right: 20px;
   padding-left: 20px;
-  padding-top: 28px;
 }
 
 .title--inverted {
-  color: $text-black;
+  color: $midnight;
+  margin: 0;
 }

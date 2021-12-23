@@ -1,11 +1,26 @@
 .reviews {
   padding-top: 50px;
   padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+    padding-bottom: 41px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }
 
 .reviews__list {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.reviews__item {
+  display: grid;
+  place-content: center;
 }
 
 .reviews__title {
@@ -14,6 +29,16 @@
   line-height: 30px;
   text-align: center;
   color: $black;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 17px;
+  }
 }
 
 .reviews__description {
@@ -21,13 +46,33 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  color: $text-black;
+  color: $midnight;
+  margin: 0;
+  padding-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 126px;
+    padding-left: 126px;
+    padding-top: 121px;
+    padding-bottom: 50px;
+  }
 }
 
 .reviews__subtitle {
+  display: none;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  color: $text-black;
+  color: $midnight;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

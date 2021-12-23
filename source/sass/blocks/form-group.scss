@@ -1,11 +1,12 @@
 .form-group__list {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .form-group__heading {
   text-transform: uppercase;
-  color: $raspberry;
+  color: $cerise;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
@@ -15,6 +16,6 @@
   display: block;
   font-size: 14px;
   line-height: 30px;
-  color: $raspberry;
+  color: $cerise;
   text-transform: uppercase;
 }

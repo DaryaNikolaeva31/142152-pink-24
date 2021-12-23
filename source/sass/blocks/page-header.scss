@@ -3,16 +3,38 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
-  background-color: $text-black;
+  background-color: $midnight;
+  padding-top: 22px;
+  position: relative;
 }
 
 .page-header__logo {
+  color: $white;
+  background-color: $midnight;
+  background-repeat: no-repeat;
+  margin-bottom: 21px;
   display: block;
   padding-left: 20px;
-  padding-top: 22px;
-  padding-bottom: 21px;
-  color: $white;
-  background-image: url("../img/blue-background.jpeg");
-  background-repeat: no-repeat;
-  background-size: 320px 66px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    min-height: 110px;
+  }
+
+  .page-header__logo {
+    padding-top: 27px;
+    padding-bottom: 43px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
 }
