@@ -1,11 +1,22 @@
+.field {
+  display: block;
+}
+
 .field__input {
   width: 276px;
   border: 2px solid $whisper;
   border-radius: 1px;
   padding-left: 20px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-left: 20px;
+  }
 }
 
 .field__input--comment {

@@ -1,7 +1,7 @@
 .catalog-photos {
   line-height: 33px;
   color: $midnight;
-  background-image: url("../img/back-mobile.jpg");
+  // background-image: url("../img/back-mobile.jpg");
   background-color: $white;
   background-repeat: no-repeat;
   background-size: 320px 462px;
@@ -14,4 +14,18 @@
   background-color: $white;
   text-align: center;
   color: $midnight;
+  margin: 0;
+  padding-top: 54px;
+  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding-top: 100px;
+    padding-bottom: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 97px;
+  }
 }

@@ -20,20 +20,19 @@
 .download__list {
   list-style: none;
   padding: 0;
-  padding-left: 58px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .download__item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 32px;
   padding-bottom: 28px;
-  margin-right: 35px;
 }
 
 .download__link {

@@ -1,6 +1,23 @@
 .photo-post__buttons {
   padding-top: 38px;
   padding-bottom: 41px;
+  display: grid;
+  place-content: center;
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    gap: 24px;
+    grid-column: 2/3;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 130px;
+    gap: 0;
+  }
 }
 
 .photo-post__submit {
@@ -13,6 +30,11 @@
   line-height: 18px;
   text-align: center;
   color: $cerise;
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+    margin-right: 44px;
+  }
 }
 
 .photo-post__reset {
@@ -26,4 +48,29 @@
   font-size: 18px;
   line-height: 18px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
+}
+
+.photo-post__image {
+  padding-top: 20px;
+  padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/3;
+    padding: 0;
+    padding-left: 20px;
+  }
+}
+
+.photo-post__scale {
+  @media (min-width: $tablet-width) {
+    padding-left: 51px;
+    padding-top: 20px;
+    padding-bottom: 34px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

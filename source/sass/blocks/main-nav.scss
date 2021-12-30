@@ -42,6 +42,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 78px;
+    justify-content: center;
+    align-items: center;
   }
 }
 

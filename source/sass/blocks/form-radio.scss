@@ -1,11 +1,31 @@
 .form-radio {
   background-color: $white-smoke;
+  grid-area: app;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    border: 2px solid $whisper;
+    border-radius: 1px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 431px;
+  }
+}
+
+.form-radio__wrapper {
+  border: none;
 }
 
 .form-radio__list {
   list-style: none;
-  padding: 0;
+  padding-left: 20px;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 74px;
+  }
 }
 
 .form-radio__heading {
@@ -14,4 +34,18 @@
   text-align: center;
   font-size: 14px;
   line-height: 18px;
+  background-color: $white-smoke;
+  padding-top: 42px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 49px;
+  }
 }

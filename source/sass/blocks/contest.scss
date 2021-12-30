@@ -1,14 +1,24 @@
 .contest {
-  background-image: url("../img/back-mobile.jpg");
+  // background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-color: $white;
   background-size: 320px 462px;
   color: $midnight;
+  display: flex;
+  flex-direction: column;
 }
 
 .contest__title {
   padding: 0;
+  padding-top: 54px;
+  padding-bottom: 55px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 82px;
+  }
 }
