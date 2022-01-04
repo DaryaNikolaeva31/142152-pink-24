@@ -45,7 +45,7 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="page-main__wrapper">
+    <div class="text-block__wrapper">
       <div class="text-block">
         <h1 class="title">Конкурс на самое
           безбашенное
@@ -53,141 +53,143 @@
       </div>
     </div>
     <section class="contest">
-      <h2 class="visually-hidden">Заполните форму</h2>
-      <p class="contest__title">Поделитесь своей историей и получите
-        шанс выиграть ценный приз — 1000
-        миль на вашу бонусную карту!</p>
-      <form class="contest__form post-form" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="post-form__group form-group form-group--personal">
-          <fieldset class="form-group__wrapper wrapper">
-            <legend class="visually-hidden">Персональные данные</legend>
-            <ul class="form-group__list">
-              <li class="form-group__item">
-                <label class="form-group__field field">
-                  Фамилия
-                  <input class="field__input" name="surname" type="text" placeholder="Укажите фамилию *" required>
-                </label>
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__field field">
-                  Имя
-                  <input class="field__input" name="name" type="text" placeholder="Введите ваше имя *" required>
-                </label>
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__field field">
-                  Отчество
-                  <input class="field__input" name="fathername" type="text" placeholder="Ну и отчество тоже">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div class="post-form__group form-radio">
-          <fieldset class="form-radio__wrapper wrapper">
-            <legend class="form-radio__heading">С каким приложением
-              путешествовали?</legend>
-            <ul class="form-radio__list">
-              <li class="form-radio__item">
-                <label class="form-radio__field radio">
-                  <input class="radio__input" name="phone" type="radio" value="ios" checked>
-                  <span class="radio__text">Pink для iOS</span>
-                </label>
-              </li>
-              <li class="form-radio__item">
-                <label class="form-radio__field radio">
-                  <input class="radio__input" name="phone" type="radio" value="android">
-                  <span class="radio__text">Pink на Android</span>
-                </label>
-              </li>
-              <li class="form-radio__item">
-                <label class="form-radio__field radio">
-                  <input class="radio__input" name="phone" type="radio" value="windows-phone">
-                  <span class="radio__text">Windows Phone</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div class="post-form__group form-group form-group--contact">
-          <fieldset class="form-group__wrapper wrapper">
-            <legend class="form-group__heading form-group__heading--info">контактная информация</legend>
-            <ul class="form-group__list">
-              <li class="form-group__item">
-                <label class="form-group__field field">
-                  Номер телефона
-                  <input class="field__input" name="phone" type="tel" placeholder="Номер, пожалуйста">
-                </label>
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__field field">
-                  Адрес почты
-                  <input class="field__input" name="phone" type="tel" placeholder="Введите почту *" required>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div class="post-form__group form-сheckbox">
-          <fieldset class="form-checkbox__wrapper wrapper">
-            <legend class="form-сheckbox__heading">Ваши безбашенные
-              достижения в путешествии</legend>
-            <ul class="form-сheckbox__list">
-              <li class="form-сheckbox__item">
-                <label class="form-сheckbox__field checkbox">
-                  <input class="checkbox__input" name="achievements" type="checkbox" value="selfi-shark" checked>
-                  <span class="checkbox__text">Сделал селфи с акулой</span>
-                </label>
-              </li>
-              <li class="form-сheckbox__item">
-                <label class="form-сheckbox__field checkbox">
-                  <input class="checkbox__input" name="achievements" type="checkbox" value="sunburn" checked>
-                  <span class="checkbox__text">Обгорел на пляже</span>
-                </label>
-              </li>
-              <li class="form-сheckbox__item">
-                <label class="form-сheckbox__field checkbox">
-                  <input class="checkbox__input" name="achievements" type="checkbox" value="chuck">
-                  <span class="checkbox__text">Видел Чака Норриса</span>
-                </label>
-              </li>
-              <li class="form-сheckbox__item">
-                <label class="form-сheckbox__field checkbox">
-                  <input class="checkbox__input" name="achievements" type="checkbox" value="souvenirs">
-                  <span class="checkbox__text">Накупил сувениров</span>
-                </label>
-              </li>
-              <li class="form-сheckbox__item">
-                <label class="form-сheckbox__field checkbox">
-                  <input class="checkbox__input" name="achievements" type="checkbox" value="tower" checked>
-                  <span class="checkbox__text">Удержал башню</span>
-                </label>
-              </li>
-              <li class="form-сheckbox__item">
-                <label class="form-сheckbox__field checkbox">
-                  <input class="checkbox__input" name="achievements" type="checkbox" value="trash-hotel">
-                  <span class="checkbox__text">Разгромил отель</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div class="post-form__group form-group form-group--emotions">
-          <p class="form-group__wrapper wrapper">
-            <label class="field">
-              <span class="form-group__heading">Опишите свои эмоции</span>
-              <textarea class="field__input field__input--comment" name="text" rows="5"
-                placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </label>
-          </p>
-        </div>
-        <div class="post-form__footer wrapper">
-          <button class="post-form__button button" type="submit">
-            Отправить форму
-          </button>
-          <p class="post-form__text">* — обязательные поля</p>
-        </div>
-      </form>
+      <div class="contest__wrapper wrapper">
+        <h2 class="visually-hidden">Заполните форму</h2>
+        <p class="contest__title">Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!</p>
+        <form class="contest__form post-form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="post-form__group form-group post-form__group--personal">
+            <fieldset class="form-group__wrapper form-group__wrapper--personal">
+              <legend class="visually-hidden">Персональные данные</legend>
+              <ul class="form-group__list">
+                <li class="form-group__item">
+                  <label class="form-group__field field">
+                    Фамилия
+                    <input class="field__input" name="surname" type="text" placeholder="Укажите фамилию *" required>
+                  </label>
+                </li>
+                <li class="form-group__item">
+                  <label class="form-group__field field">
+                    Имя
+                    <input class="field__input" name="name" type="text" placeholder="Введите ваше имя *" required>
+                  </label>
+                </li>
+                <li class="form-group__item">
+                  <label class="form-group__field field">
+                    Отчество
+                    <input class="field__input" name="fathername" type="text" placeholder="Ну и отчество тоже">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="post-form__group form-radio post-form__group--app">
+            <fieldset class="form-radio__wrapper">
+              <legend class="form-radio__heading">С каким приложением
+                путешествовали?</legend>
+              <ul class="form-radio__list">
+                <li class="form-radio__item">
+                  <label class="form-radio__field radio">
+                    <input class="radio__input" name="phone" type="radio" value="ios" checked>
+                    <span class="radio__text">Pink для iOS</span>
+                  </label>
+                </li>
+                <li class="form-radio__item">
+                  <label class="form-radio__field radio">
+                    <input class="radio__input" name="phone" type="radio" value="android">
+                    <span class="radio__text">Pink на Android</span>
+                  </label>
+                </li>
+                <li class="form-radio__item">
+                  <label class="form-radio__field radio">
+                    <input class="radio__input" name="phone" type="radio" value="windows-phone">
+                    <span class="radio__text">Windows Phone</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="post-form__group form-group post-form__group--contact">
+            <fieldset class="form-group__wrapper wrapper">
+              <legend class="form-group__heading form-group__heading--info">контактная информация</legend>
+              <ul class="form-group__list">
+                <li class="form-group__item">
+                  <label class="form-group__field field">
+                    Номер телефона
+                    <input class="field__input" name="phone" type="tel" placeholder="Номер, пожалуйста">
+                  </label>
+                </li>
+                <li class="form-group__item">
+                  <label class="form-group__field field">
+                    Адрес почты
+                    <input class="field__input" name="phone" type="tel" placeholder="Введите почту *" required>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="post-form__group form-сheckbox post-form__group--achievements">
+            <fieldset class="form-checkbox__wrapper wrapper">
+              <legend class="form-сheckbox__heading">Ваши безбашенные
+                достижения в путешествии</legend>
+              <ul class="form-сheckbox__list">
+                <li class="form-сheckbox__item">
+                  <label class="form-сheckbox__field checkbox">
+                    <input class="checkbox__input" name="achievements" type="checkbox" value="selfi-shark" checked>
+                    <span class="checkbox__text">Сделал селфи с акулой</span>
+                  </label>
+                </li>
+                <li class="form-сheckbox__item">
+                  <label class="form-сheckbox__field checkbox">
+                    <input class="checkbox__input" name="achievements" type="checkbox" value="sunburn" checked>
+                    <span class="checkbox__text">Обгорел на пляже</span>
+                  </label>
+                </li>
+                <li class="form-сheckbox__item">
+                  <label class="form-сheckbox__field checkbox">
+                    <input class="checkbox__input" name="achievements" type="checkbox" value="chuck">
+                    <span class="checkbox__text">Видел Чака Норриса</span>
+                  </label>
+                </li>
+                <li class="form-сheckbox__item">
+                  <label class="form-сheckbox__field checkbox">
+                    <input class="checkbox__input" name="achievements" type="checkbox" value="souvenirs">
+                    <span class="checkbox__text">Накупил сувениров</span>
+                  </label>
+                </li>
+                <li class="form-сheckbox__item">
+                  <label class="form-сheckbox__field checkbox">
+                    <input class="checkbox__input" name="achievements" type="checkbox" value="tower" checked>
+                    <span class="checkbox__text">Удержал башню</span>
+                  </label>
+                </li>
+                <li class="form-сheckbox__item">
+                  <label class="form-сheckbox__field checkbox">
+                    <input class="checkbox__input" name="achievements" type="checkbox" value="trash-hotel">
+                    <span class="checkbox__text">Разгромил отель</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="post-form__group form-group post-form__group--emotions">
+            <p class="form-group__wrapper wrapper">
+              <label class="field">
+                <span class="form-group__heading">Опишите свои эмоции</span>
+                <textarea class="field__input field__input--comment" name="text" rows="5"
+                  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </label>
+            </p>
+          </div>
+          <div class="post-form__footer wrapper">
+            <button class="post-form__button button" type="submit">
+              Отправить форму
+            </button>
+            <p class="post-form__text">* — обязательные поля</p>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="page-footer">

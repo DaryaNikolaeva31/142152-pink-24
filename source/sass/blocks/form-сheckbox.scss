@@ -1,18 +1,10 @@
 .form-сheckbox {
   background-color: $white-smoke;
-  grid-area: achivements;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
     border: 2px solid $whisper;
     border-radius: 1px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 260px 240px 210px;
-    padding-left: 60px;
-    padding-right: 64px;
   }
 }
 
@@ -31,7 +23,6 @@
     display: grid;
     grid-template-columns: 260px 240px 210px;
     padding-left: 60px;
-    padding-right: 64px;
     row-gap: 47px;
     column-gap: 55px;
   }

@@ -1,22 +1,18 @@
 .photo-post__buttons {
   padding-top: 38px;
   padding-bottom: 41px;
-  display: grid;
-  place-content: center;
-  gap: 10px;
+  display: block;
 
   @media (min-width: $tablet-width) {
-    gap: 24px;
-    grid-column: 2/3;
     padding-top: 0;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 130px;
-    gap: 0;
+    display: grid;
+    grid-template-columns: 183px 183px;
+    column-gap: 44px;
+    padding-top: 107px;
   }
 }
 
@@ -30,10 +26,17 @@
   line-height: 18px;
   text-align: center;
   color: $cerise;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    margin-top: 25px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 183px;
-    margin-right: 44px;
+    margin-right: 0;
+    margin-top: 0;
   }
 }
 

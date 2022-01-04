@@ -1,20 +1,3 @@
-.form-group {
-  padding-top: 42px;
-  padding-bottom: 44px;
-}
-
-.form-group--personal {
-  grid-area: personal;
-}
-
-.form-group--contact {
-  grid-area: contact;
-}
-
-.form-group--emotions {
-  grid-area: emotions;
-}
-
 .form-group__list {
   list-style: none;
   padding: 0;
@@ -35,7 +18,6 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding-top: 65px;
     margin: 0;
   }
 }
@@ -64,7 +46,10 @@
     border: 2px solid $whisper;
     border-radius: 1px;
     padding: 60px;
-    display: flex;
-    flex-direction: column;
   }
+}
+
+.form-group__wrapper--personal {
+  border: none;
+  padding: 0;
 }

@@ -1,28 +1,64 @@
 .post-form {
   padding: 0;
   display: grid;
+  grid-template-columns: 280px;
+  grid-template-areas:
+    "personal"
+    "achievements"
+    "contact"
+    "app"
+    "emotions"
+    "buttons"
+    "text";
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 
   @media (min-width: $desktop-width) {
+    display: grid;
     grid-template-columns: 465px 431px;
     grid-template-areas:
-      "pesronal app"
+      "personal app"
       "contact contact"
-      "achivements achivements"
+      "achievements achievements"
       "emotions emotions"
       "buttons text";
+    column-gap: 44px;
   }
 }
 
 .post-form__group {
   border: none;
   padding: 0;
-  padding-bottom: 44px;
 }
 
-@media (min-width: $tablet-width) {
-  .post-form__group:not(:last-child) {
-    padding-bottom: 56px;
+.post-form__group--personal {
+  grid-area: personal;
+
+  @media (min-width: $desktop-width) {
+    width: 431px;
   }
+}
+
+.post-form__group--contact {
+  grid-area: contact;
+}
+
+.post-form__group--emotions {
+  grid-area: emotions;
+}
+
+.post-form__group--app {
+  grid-area: app;
+
+  @media (min-width: $desktop-width) {
+    width: 431px;
+  }
+}
+
+.post-form__group--achievements {
+  grid-area: achievements;
 }
 
 .post-form__text {
