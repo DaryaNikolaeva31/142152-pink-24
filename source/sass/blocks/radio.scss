@@ -1,4 +1,23 @@
+.radio {
+  display: flex;
+  align-items: center;
+}
+
 .radio__text {
   font-size: 18px;
   line-height: 30px;
+  padding-left: 31px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 22px;
+  }
+}
+
+.radio__input {
+  margin-bottom: 19px;
+  margin-top: 19px;
+  width: 37px;
+  height: 37px;
+  background: $white;
+  border: 2px solid $whisper;
 }

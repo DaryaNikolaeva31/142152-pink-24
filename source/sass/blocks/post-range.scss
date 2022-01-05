@@ -1,0 +1,20 @@
+.post-range__scale {
+  width: 240px;
+  height: 2px;
+  color: $midnight;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+.post-range__scale--current {
+  display: block;
+  width: 100%;
+}

@@ -1,11 +1,31 @@
 .form-сheckbox {
   background-color: $white-smoke;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    border: 2px solid $whisper;
+    border-radius: 1px;
+  }
+}
+
+.form-checkbox__wrapper {
+  border: none;
+  padding-bottom: 44px;
 }
 
 .form-сheckbox__list {
   list-style: none;
   padding: 0;
+  padding-left: 20px;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 260px 240px 210px;
+    padding-left: 60px;
+    row-gap: 47px;
+    column-gap: 55px;
+  }
 }
 
 .form-сheckbox__heading {
@@ -15,4 +35,12 @@
   font-size: 14px;
   line-height: 18px;
   background-color: $white-smoke;
+  padding-top: 42px;
+  padding-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    padding-right: 31px;
+    padding-left: 31px;
+  }
 }

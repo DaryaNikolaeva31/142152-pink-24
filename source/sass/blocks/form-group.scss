@@ -10,6 +10,16 @@
   text-align: center;
   font-size: 14px;
   line-height: 18px;
+  display: block;
+}
+
+.form-group__heading--info {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+  }
 }
 
 .form-group__field {
@@ -18,4 +28,28 @@
   line-height: 30px;
   color: $cerise;
   text-transform: uppercase;
+  padding-bottom: 29px;
+}
+
+.form-group__item {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.form-group__wrapper {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $whisper;
+    border-radius: 1px;
+    padding: 60px;
+  }
+}
+
+.form-group__wrapper--personal {
+  border: none;
+  padding: 0;
 }

@@ -4,7 +4,6 @@
   font-size: 18px;
   line-height: 32px;
   background-color: $midnight;
-  padding-top: 22px;
   position: relative;
 }
 
@@ -15,22 +14,16 @@
   margin-bottom: 21px;
   display: block;
   padding-left: 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .page-header {
-    min-height: 110px;
-  }
-
-  .page-header__logo {
+  @media (min-width: $tablet-width) {
     padding-top: 27px;
     padding-bottom: 43px;
     padding-left: 20px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page-header__wrapper {
+.page-header__wrapper {
+  @media (min-width: $desktop-width) {
     width: 940px;
     margin-left: auto;
     margin-right: auto;
