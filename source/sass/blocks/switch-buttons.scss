@@ -1,0 +1,10 @@
+.switch-buttons {
+  width: 100%;
+  text-align: center;
+}
+
+.switch-buttons--price {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

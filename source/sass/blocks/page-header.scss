@@ -9,16 +9,22 @@
 
 .page-header__logo {
   color: $white;
-  background-color: $midnight;
+  background-color: rgba(0, 0, 0, 0.3);
   background-repeat: no-repeat;
-  margin-bottom: 21px;
   display: block;
   padding-left: 20px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media (max-width: $tablet-width-down) {
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 27px;
-    padding-bottom: 43px;
+    padding-bottom: 21px;
     padding-left: 20px;
+    border-bottom: none;
   }
 }
 

@@ -1,20 +1,26 @@
-.field {
-  display: block;
-}
-
 .field__input {
   width: 100%;
   border: 2px solid $whisper;
   border-radius: 1px;
   padding-left: 20px;
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 14px;
+  padding-bottom: 16px;
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+.field__input::placeholder {
+  color: $midnight;
+  opacity: 1;
+}
+
 .field__input--comment {
   padding-left: 20px;
   padding-top: 22px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    padding-right: 0;
+  }
 }

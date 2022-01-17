@@ -21,6 +21,11 @@
   list-style: none;
   padding-left: 20px;
   margin: 0;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-left: 74px;
@@ -35,12 +40,15 @@
   line-height: 18px;
   background-color: $white-smoke;
   padding-top: 42px;
-  padding-bottom: 40px;
+  padding-bottom: 21px;
+
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top: 0;
+    padding-left: 126px;
+    margin-right: 25px;
+    margin-left: 25px;
   }
 
   @media (min-width: $desktop-width) {

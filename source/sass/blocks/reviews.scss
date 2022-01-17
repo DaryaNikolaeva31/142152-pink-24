@@ -1,9 +1,14 @@
 .reviews__wrapper {
   padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 110px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 109px;
+    padding-bottom: 58px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-top: 72px;
+    padding-top: 193px;
     padding-bottom: 41px;
   }
 }

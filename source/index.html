@@ -11,38 +11,39 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo logo" href="index.html">
-        <img src="img/pink.svg" width="74" height="23" alt="Логотип сайта Пинк.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              Html Academy
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <div class="picture-container">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo" href="index.html">
+          <img src="img/pink.svg" width="74" height="23" alt="Логотип сайта Пинк.">
+        </a>
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Приложение для поднятия настроения</h1>
@@ -76,24 +77,25 @@
           Phone, OS X, Windows 8</p>
       </div>
     </section>
+    </div>
     <section class="advantages">
       <div class="advantages__wrapper wrapper">
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="title title--inverted">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--rise">
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю
               хандру и депрессию буквально в
               несколько кликов!</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--arround">
             <h3 class="advantages__title">Меняет мир вокруг</h3>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом
               или текстовой подписью, чтобы
               усилить эффект</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages__item advantages__item--friends">
             <h3 class="advantages__title">Заводит новых друзей</h3>
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь
               фотографиями с друзьями и заводите
@@ -124,6 +126,17 @@
             </p>
           </li>
         </ul>
+        <div class="switch-buttons switch-buttons--reviews">
+          <button type="button" class="switch-buttons__first">
+            <span class="visually-hidden">Кнопка назад</span>
+          </button>
+          <button type="button" class="switch-buttons__main switch-buttons__main--current">
+            <span class="visually-hidden">Выбранная опция</span>
+          </button>
+          <button type="button" class="switch-buttons__last">
+            <span class="visually-hidden">Кнопка вперед</span>
+          </button>
+        </div>
       </div>
     </section>
     <section class="price">
@@ -195,14 +208,14 @@
             </tr>
           </tbody>
         </table>
-        <div class="price-buttons">
-          <button type="button" class="price-buttons__base">
+        <div class="switch-buttons switch-buttons--price">
+          <button type="button" class="switch-buttons__first">
             <span class="visually-hidden">Кнопка назад</span>
           </button>
-          <button type="button" class="price-buttons__standart price-buttons__standart--current">
-            <span class="visually-hidden">Выбранная таблица</span>
+          <button type="button" class="switch-buttons__main switch-buttons__main--current">
+            <span class="visually-hidden">Выбранная опция</span>
           </button>
-          <button type="button" class="price-buttons__unlime">
+          <button type="button" class="switch-buttons__last">
             <span class="visually-hidden">Кнопка вперед</span>
           </button>
         </div>
@@ -213,7 +226,7 @@
         <h2 class="visually-hidden">Наши контакты</h2>
         <p class="title title--inverted">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contacts__list">
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--phone">
             <p class="contacts__title">Звоните:</p>
             <p class="contacts__description">
               <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
@@ -225,10 +238,11 @@
               <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
             </p>
           </li>
-          <li class="contacts__item">
-            <address class="contacts__title">Пишите:
+          <li class="contacts__item contacts__item--email">
+            <p class="contacts__title">Пишите:</p>
+            <p class="contacts__description">
               <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </address>
+            </p>
           </li>
         </ul>
       </div>
@@ -277,7 +291,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

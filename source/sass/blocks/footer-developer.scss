@@ -1,6 +1,10 @@
 .footer-developer {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .footer-developer__icon {

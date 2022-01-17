@@ -13,12 +13,33 @@
   display: block;
 }
 
-.form-group__heading--info {
+.form-group__heading--contact {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
     margin: 0;
+    margin-left: 117px;
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 279px;
+  }
+}
+
+.form-group__heading--emotions {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
   }
 }
 
@@ -29,6 +50,15 @@
   color: $cerise;
   text-transform: uppercase;
   padding-bottom: 29px;
+}
+
+
+.form-group__discription {
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+  }
 }
 
 .form-group__item {
@@ -52,4 +82,75 @@
 .form-group__wrapper--personal {
   border: none;
   padding: 0;
+}
+
+.form-group__wrapper--personal .form-group__field {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding-top: 56px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 58px;
+  }
+}
+
+// .form-group__wrapper--personal .form-group__field:last-child {
+//   @media (min-width: $desktop-width) {
+//     padding-bottom: 0;
+//   }
+// }
+
+.form-group__wrapper--contact {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 27px;
+    padding-top: 0;
+  }
+}
+
+.form-group__wrapper--contact .form-group__field {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+    padding-top: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    padding-top: 29px;
+    width: 371px;
+  }
+}
+
+.form-group__wrapper--contact .form-group__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form-group__wrapper--contact .form-group__discription {
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
+}
+
+
+.form-group__wrapper--emotions {
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 53px;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 45px;
+  }
 }

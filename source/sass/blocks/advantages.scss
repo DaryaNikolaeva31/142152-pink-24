@@ -1,8 +1,5 @@
 .advantages {
   background-color: $white-smoke;
-  // background-image: url("../img/iphone-smile.jpeg");
-  background-repeat: no-repeat;
-  background-size: 157px 320px;
 
   @media (min-width: $desktop-width) {
     padding-bottom: 59px;
@@ -14,11 +11,18 @@
   padding: 0;
   margin: 0;
   text-align: center;
-  padding-bottom: 5px;
+  padding-top: 53px;
+  padding-bottom: 325px;
+  background-image: url("../img/iphone-smile.png");
+  background-repeat: no-repeat;
+  background-size: 157px 320px;
+  background-position: bottom;
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    padding-bottom: 3px;
+    padding-bottom: 49px;
+    padding-left: 310px;
+    background-position: left;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,6 +30,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 68px;
+    // padding-top: 366px;
+    padding-bottom: 49px;
+    padding-left: 0;
+    background-image: none;
   }
 }
 
@@ -58,5 +66,46 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+.advantages__wrapper {
+  padding-top: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 77px;
+  }
+}
+
+.advantages__item {
+  @media (min-width: $desktop-width) {
+    padding-top: 366px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item--rise {
+    background-image: url("../img/rise.png");
+    background-repeat: no-repeat;
+    background-size: 186px 382px;
+    background-position: top;
+  }
+
+  .advantages__item--arround {
+    background-image: url("../img/arround.png");
+    background-repeat: no-repeat;
+    background-size: 186px 382px;
+    background-position: top;
+  }
+
+  .advantages__item--friends {
+    background-image: url("../img/friends.png");
+    background-repeat: no-repeat;
+    background-size: 186px 382px;
+    background-position: top;
   }
 }

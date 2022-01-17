@@ -9,14 +9,31 @@
 .contest__title {
   padding: 0;
   padding-top: 54px;
-  padding-bottom: 55px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  padding-bottom: 55px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 100px;
-    padding-bottom: 82px;
+    padding-bottom: 0;
+  }
+}
+
+.contest__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 89px;
   }
 }
