@@ -5,6 +5,32 @@
   text-align: center;
   color: $white;
   background-color: $black;
+  background-image: url("../img/phone.png"),
+    url("../img/main_background.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 286px, 320px 462px;
+  background-position: 0 176px, 0 0;
+  padding-top: 90px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 660px 545px, 660px 729px;
+    background-position: 0 184px, 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 1050px 645px, 1200px 853px;
+    background-position: 208px 146px, 0 0;
+  }
+}
+
+.download__discription {
+  background-color: $blue-charcoal;
+  margin-top: 314px;
+  padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .download__button {

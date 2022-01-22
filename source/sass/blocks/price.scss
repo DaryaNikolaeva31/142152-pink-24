@@ -1,6 +1,8 @@
 .price {
   background-color: $white-smoke;
   overflow: hidden;
+
+  @include triangle;
 }
 
 .price__table {
@@ -18,8 +20,7 @@
 .price__wrapper {
   display: grid;
   justify-content: center;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 127px;
 
   @media (min-width: $tablet-width) {
     padding-top: 70px;

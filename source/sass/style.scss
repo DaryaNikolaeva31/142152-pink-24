@@ -2,6 +2,7 @@
 
 //Global
 @import "./global/variables.scss";
+@import "./global/mixins.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
 
@@ -42,5 +43,7 @@
 @import "./blocks/modal-success.scss";
 @import "./blocks/text-block.scss";
 @import "./blocks/post-range.scss";
-@import "./blocks/picture-container.scss";
-@import "./blocks/switch-buttons.scss";
+@import "./blocks/switch.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/map-picture.scss";
+@import "./blocks/arrow-switch.scss";

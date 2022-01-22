@@ -1,9 +1,11 @@
 .advantages {
-  background-color: $white-smoke;
-
   @media (min-width: $desktop-width) {
     padding-bottom: 59px;
   }
+}
+
+.advantages__container--grey {
+  @include triangle;
 }
 
 .advantages__list {
@@ -15,14 +17,16 @@
   padding-bottom: 325px;
   background-image: url("../img/iphone-smile.png");
   background-repeat: no-repeat;
-  background-size: 157px 320px;
-  background-position: bottom;
+  background-size: 157px 277px;
+  background-position: center bottom;
 
   @media (min-width: $tablet-width) {
     text-align: left;
     padding-bottom: 49px;
     padding-left: 310px;
-    background-position: left;
+    padding-top: 122px;
+    background-position: 0 50px;
+    background-size: 268px 481px;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,28 +88,26 @@
 .advantages__item {
   @media (min-width: $desktop-width) {
     padding-top: 366px;
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: top;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .advantages__item--rise {
+.advantages__item--rise {
+  @media (min-width: $desktop-width) {
     background-image: url("../img/rise.png");
-    background-repeat: no-repeat;
-    background-size: 186px 382px;
-    background-position: top;
   }
+}
 
-  .advantages__item--arround {
+.advantages__item--arround {
+  @media (min-width: $desktop-width) {
     background-image: url("../img/arround.png");
-    background-repeat: no-repeat;
-    background-size: 186px 382px;
-    background-position: top;
   }
+}
 
-  .advantages__item--friends {
+.advantages__item--friends {
+  @media (min-width: $desktop-width) {
     background-image: url("../img/friends.png");
-    background-repeat: no-repeat;
-    background-size: 186px 382px;
-    background-position: top;
   }
 }

@@ -3,11 +3,21 @@
   color: $white;
   font-weight: 300;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.2;
 }
 
 .title--inverted {
   color: $midnight;
   margin: 0;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 1.35;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+  }
 }
