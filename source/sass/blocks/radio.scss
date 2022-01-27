@@ -16,13 +16,13 @@
 .radio__input[type="radio"] + .radio__text::before {
   content: "";
   position: absolute;
-  top: 19px;
-  left: 5px;
-  width: 37px;
-  height: 37px;
+  top: 18px;
+  left: 4px;
+  width: 39px;
+  height: 39px;
   background-color: $white;
   border-radius: 50%;
-  border: 1px solid $whisper;
+  border: 2px solid $whisper;
 }
 
 .radio__input[type="radio"]:checked + .radio__text::after {

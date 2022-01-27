@@ -51,12 +51,27 @@
   grid-area: contact;
   padding-top: 32px;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
 }
 
 .post-form__group--emotions {
   grid-area: emotions;
   padding-top: 38px;
   padding-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 64px;
@@ -76,8 +91,8 @@
   grid-area: achievements;
 
   @media (min-width: $desktop-width) {
-    padding-top: 64px;
-    padding-bottom: 33px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 

@@ -35,6 +35,8 @@
     padding-left: 38px;
     margin-top: -10px;
     display: inline-block;
+    background-color: $white;
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,7 +115,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    padding-top: 29px;
+    padding-top: 25px;
     width: 371px;
   }
 }
@@ -121,7 +123,7 @@
 .form-group__wrapper--contact .form-group__list {
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
+    gap: 77px;
   }
 }
 

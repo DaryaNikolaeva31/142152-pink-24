@@ -1,10 +1,18 @@
+.field--emotions {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .field__input {
   width: 100%;
   border: 2px solid $whisper;
   border-radius: 1px;
   padding-left: 20px;
+  padding-right: 20px;
   padding-top: 14px;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -44,27 +52,29 @@
 .field--phone .field__input {
   @media (min-width: $tablet-width) {
     background-image: url("../img/phone-icon.svg"),
-      url("../img/gradient.jpg");
+      linear-gradient(to left, $whisper 60px, $white 60px);
     background-repeat: no-repeat;
-    background-size: 20px 19px, 60px 60px;
-    background-position: 451px 19px, 432px 0;
+    background-size: 20px 19px, auto;
+    background-position: 451px 19px, 0 0;
+    padding-right: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    background-position: 328px 19px, 307px 0;
+    background-position: 328px 19px, 0 0;
   }
 }
 
 .field--mail .field__input {
   @media (min-width: $tablet-width) {
     background-image: url("../img/mail-icon.svg"),
-      url("../img/gradient.jpg");
+      linear-gradient(to left, $whisper 60px, $white 60px);
     background-repeat: no-repeat;
-    background-size: 18px 13px, 60px 60px;
-    background-position: 453px 23px, 432px 0;
+    background-size: 18px 13px, auto;
+    background-position: 453px 23px, 0 0;
+    padding-right: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    background-position: 328px 23px, 307px 0;
+    background-position: 328px 23px, 0 0;
   }
 }

@@ -8,22 +8,22 @@
   background-image: url("../img/phone_first.png"),
     url("../img/main-background_first.jpg");
   background-repeat: no-repeat;
-  background-size: 320px 286px, 100% 462px;
+  background-size: 320px 286px, cover;
   background-position: 0 176px, 0 0;
   padding-top: 90px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/phone_second.png"),
       url("../img/main-background_second.jpg");
-    background-size: 660px 545px, 100% 729px;
+    background-size: 660px 545px, cover;
     background-position: -28px 193px, 0 0;
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/phone_third.png"),
       url("../img/main-background_third.jpg");
-    background-size: 1050px 645px, 100% 853px;
-    background-position: 208px 159px, 0 0;
+    background-size: 1050px 645px, cover;
+    background-position: calc(50% + 124px) 159px, 0 0;
   }
 }
 
