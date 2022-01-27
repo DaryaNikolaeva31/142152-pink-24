@@ -45,20 +45,14 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="text-block">
-      <div class="text-block__wrapper">
-        <h1 class="title">Конкурс на самое
-          безбашенное
-          путешествие с Пинк</h1>
-      </div>
+    <div class="page-main__inner text-block text-block--inner">
+      <h1 class="title wrapper">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <section class="contest">
-      <div class="contest__wrapper wrapper">
+      <div class="contest__wrapper">
         <h2 class="visually-hidden">Заполните форму</h2>
-        <p class="contest__title">Поделитесь своей историей и получите
-          шанс выиграть ценный приз — 1000
-          миль на вашу бонусную карту!</p>
-        <span class="contest__text">Пожалуйста, заполните форму ниже:</span>
+        <p class="contest__title wrapper">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+          бонусную карту! <span class="contest__text">Пожалуйста, заполните форму ниже:</span></p>
         <form class="contest__form post-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="post-form__group form-group post-form__group--personal">
             <fieldset class="form-group__wrapper form-group__wrapper--personal">
@@ -66,19 +60,19 @@
               <ul class="form-group__list">
                 <li class="form-group__item">
                   <label class="form-group__field field">
-                    <span class="form-group__discription">Фамилия</span>
+                    <span class="field__description">Фамилия</span>
                     <input class="field__input" name="surname" type="text" placeholder="Укажите фамилию *" required>
                   </label>
                 </li>
                 <li class="form-group__item">
                   <label class="form-group__field field">
-                    <span class="form-group__discription">Имя</span>
+                    <span class="field__description">Имя</span>
                     <input class="field__input" name="name" type="text" placeholder="Введите ваше имя *" required>
                   </label>
                 </li>
                 <li class="form-group__item">
                   <label class="form-group__field field">
-                    <span class="form-group__discription">Отчество</span>
+                    <span class="field__description">Отчество</span>
                     <input class="field__input" name="fathername" type="text" placeholder="Ну и отчество тоже">
                   </label>
                 </li>
@@ -116,14 +110,14 @@
               <legend class="form-group__heading form-group__heading--contact">контактная информация</legend>
               <ul class="form-group__list">
                 <li class="form-group__item">
-                  <label class="form-group__field field">
-                    <span class="form-group__discription">Номер телефона</span>
+                  <label class="form-group__field field field--contact field--phone">
+                    <span class="field__description">Номер телефона</span>
                     <input class="field__input" name="phone" type="tel" placeholder="Номер, пожалуйста">
                   </label>
                 </li>
                 <li class="form-group__item">
-                  <label class="form-group__field field">
-                    <span class="form-group__discription">Адрес почты</span>
+                  <label class="form-group__field field field--contact field--mail">
+                    <span class="field__description">Адрес почты</span>
                     <input class="field__input" name="phone" type="tel" placeholder="Введите почту *" required>
                   </label>
                 </li>
@@ -131,7 +125,7 @@
             </fieldset>
           </div>
           <div class="post-form__group form-сheckbox post-form__group--achievements">
-            <fieldset class="form-checkbox__wrapper wrapper">
+            <fieldset class="form-checkbox__wrapper">
               <legend class="form-сheckbox__heading">Ваши безбашенные
                 достижения в путешествии</legend>
               <ul class="form-сheckbox__list">

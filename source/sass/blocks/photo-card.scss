@@ -86,7 +86,7 @@
 .photo-card--main .photo-card__subtext {
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 303px;
+    top: 529px;
     left: 425px;
   }
 
@@ -143,6 +143,7 @@
 
   &:hover {
     opacity: 0.6;
+    filter: grayscale(50%);
   }
 }
 
@@ -150,9 +151,45 @@
   width: 100vw;
   max-width: none;
   flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 1956px;
+  }
 }
 
 .photo-card__button {
   font-size: 14px;
   line-height: 24px;
+}
+
+.photo-card--main::before {
+  content: "ПАНОРАМА ДНЯ";
+  background-color: $cerise;
+  color: $white;
+  padding-right: 20px;
+  padding-left: 19px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  width: 140px;
+  position: absolute;
+  top: 0;
+  left: 140px;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+    left: 480px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 140px;
+  }
 }

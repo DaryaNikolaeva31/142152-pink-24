@@ -25,16 +25,15 @@
 .map-picture iframe {
   border: none;
   display: block;
+  width: 100%;
 }
 
 .map-picture__frame {
   @media (min-width: $tablet-width) {
-    width: 660px;
     height: 374px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
     height: 502px;
   }
 }

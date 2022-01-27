@@ -4,20 +4,54 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 1.2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 1.35;
+  }
 }
 
 .title--inverted {
   color: $midnight;
   margin: 0;
   background-color: $white;
+  padding-bottom: 70px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 1.35;
-    padding-bottom: 50px;
+    padding-bottom: 8px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     font-size: 50px;
+    padding-bottom: 0;
+  }
+}
+
+.title__sub--first {
+  padding-bottom: 47px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+  }
+}
+
+.title__sub--second {
+  @media (min-width: $tablet-width) {
+    padding-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 420px;
+    padding: 0;
   }
 }

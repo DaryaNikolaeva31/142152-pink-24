@@ -1,3 +1,26 @@
 .page-main {
   padding: 0;
 }
+
+.page-main__inner {
+  background-image: url("../img/main-background_first.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 462px;
+  background-position: 0 0;
+  padding-top: 75px;
+  min-height: 237px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/main-background_second.jpg");
+    background-size: 100% 729px;
+    padding-bottom: 74px;
+    min-height: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/main-background_third.jpg");
+    background-size: 100% 853px;
+    padding-bottom: 0;
+    min-height: 394px;
+  }
+}

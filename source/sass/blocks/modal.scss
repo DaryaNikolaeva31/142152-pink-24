@@ -1,8 +1,13 @@
 .modal {
-  /*display: none;*/
+  display: none;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 1px;
   margin: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 
   @media (min-width: $tablet-width) {
     width: 460px;
