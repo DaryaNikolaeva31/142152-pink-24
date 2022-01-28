@@ -3,22 +3,37 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
-  background-color: $midnight;
-  position: relative;
+  background-color: rgba($black, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
+
+.page-header--opened {
+  background-color: $midnight;
+}
+
 
 .page-header__logo {
   color: $white;
-  background-color: $midnight;
   background-repeat: no-repeat;
-  margin-bottom: 21px;
   display: block;
   padding-left: 20px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  width: 74px;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width-down) {
+    width: 145px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-top: 27px;
-    padding-bottom: 43px;
+    padding-bottom: 21px;
     padding-left: 20px;
+    border-bottom: none;
+    width: 147px;
   }
 }
 

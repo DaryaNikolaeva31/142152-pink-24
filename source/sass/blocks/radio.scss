@@ -13,6 +13,29 @@
   }
 }
 
+.radio__input[type="radio"] + .radio__text::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 4px;
+  width: 39px;
+  height: 39px;
+  background-color: $white;
+  border-radius: 50%;
+  border: 2px solid $whisper;
+}
+
+.radio__input[type="radio"]:checked + .radio__text::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 16px;
+  width: 15px;
+  height: 15px;
+  background-color: $cerise;
+  border-radius: 50%;
+}
+
 .radio__input {
   margin-bottom: 19px;
   margin-top: 19px;

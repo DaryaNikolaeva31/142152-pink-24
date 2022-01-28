@@ -10,12 +10,12 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--opened">
     <div class="page-header__wrapper">
       <a class="page-header__logo logo" href="index.html">
-        <img src="img/pink.svg" width="74" height="23" alt="Логотип сайта Пинк.">
+        <img class="logo__image" src="img/pink.svg" width="74" height="23" alt="Логотип сайта Пинк.">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -37,7 +37,7 @@
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">
-              Html Academy
+              HTML Academy
             </a>
           </li>
         </ul>
@@ -50,56 +50,69 @@
       <div class="download__wrapper wrapper">
         <h2 class="visually-hidden">Скачай приложение на свое устройство</h2>
         <div class="text-block">
-          <p class="title">Взгляните на жизнь иначе!</p>
+          <p class="text-block__title title">Взгляните на жизнь иначе!</p>
         </div>
-        <a class="download__button" href="#">
-          Скачать приложение
-        </a>
-        <ul class="download__list">
-          <li class="download__item">
-            <a class="download__link download__link--ios" href="#">
-              <span class="visually-hidden">iOS</span>
-            </a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--android" href="#">
-              <span class="visually-hidden">Android</span>
-            </a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--microsoft" href="#">
-              <span class="visually-hidden">Microsoft</span>
-            </a>
-          </li>
-        </ul>
-        <p class="download__subtitle">Доступно для iPhone, iPad, Android, Windows
-          Phone, OS X, Windows 8</p>
+      </div>
+      <div class="download__description">
+        <div class="download__wrapper wrapper">
+          <a class="download__button" href="#">
+            Скачать приложение
+          </a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__link download__link--ios" href="#">
+                <span class="visually-hidden">iOS</span>
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--android" href="#">
+                <span class="visually-hidden">Android</span>
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--microsoft" href="#">
+                <span class="visually-hidden">Microsoft</span>
+              </a>
+            </li>
+          </ul>
+          <p class="download__subtitle">Доступно для iPhone, iPad, Android, Windows
+            Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </section>
     <section class="advantages">
-      <div class="advantages__wrapper wrapper">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <p class="title title--inverted">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">Приложение позволит вам победить осеннюю
-              хандру и депрессию буквально в
-              несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом
-              или текстовой подписью, чтобы
-              усилить эффект</p>
-          </li>
-          <li class="advantages-item">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь
-              фотографиями с друзьями и заводите
-              новых</p>
-          </li>
-        </ul>
+      <div class="advantages__container">
+        <div class="advantages__wrapper wrapper">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <p class="title title--inverted">
+            <span class="title__sub title__sub--first">Устали от серости мегаполиса?</span>
+            <span class="title__sub title__sub--second">Нам есть, что вам предложить!</span>
+          </p>
+        </div>
+      </div>
+      <div class="advantages__container advantages__container--grey">
+        <div class="advantages__wrapper wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--rise">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю
+                хандру и депрессию буквально в
+                несколько кликов!</p>
+            </li>
+            <li class="advantages__item advantages__item--arround">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом
+                или текстовой подписью, чтобы
+                усилить эффект</p>
+            </li>
+            <li class="advantages__item advantages__item--friends">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь
+                фотографиями с друзьями и заводите
+                новых</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="information">
@@ -115,6 +128,14 @@
     <section class="reviews">
       <div class="reviews__wrapper wrapper">
         <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__arrows arrow-switch">
+          <button type="button" class="arrow-switch__button arrow-switch__button--back">
+            <span class="visually-hidden">Открыть предыдущий отзыв</span>
+          </button>
+          <button type="button" class="arrow-switch__button arrow-switch__button--next">
+            <span class="visually-hidden">Открыть следующий отзыв</span>
+          </button>
+          </div>
         <ul class="reviews__list">
           <li class="reviews__item">
             <h3 class="reviews__title">Николай Петров</h3>
@@ -124,12 +145,23 @@
             </p>
           </li>
         </ul>
+        <div class="reviews__buttons switch">
+          <button type="button" class="switch__buttons switch__buttons--current">
+            <span class="visually-hidden">Смотреть отзыв №1</span>
+          </button>
+          <button type="button" class="switch__buttons">
+            <span class="visually-hidden">Смотреть отзыв №2</span>
+          </button>
+          <button type="button" class="switch__buttons">
+            <span class="visually-hidden">Смотреть отзыв №3</span>
+          </button>
+        </div>
       </div>
     </section>
     <section class="price">
       <div class="price__wrapper wrapper">
         <h2 class="visually-hidden">Прайс-лист</h2>
-        <table class="price-list price__table">
+        <table class="price__table price-list">
           <thead class="price-list__head">
             <tr>
               <th class="price-list__heading price-list__heading--invisible"></th>
@@ -148,7 +180,7 @@
             </tr>
           </thead>
           <tbody class="price-list__main">
-            <tr>
+            <tr class="price-list__first-row">
               <td class="price-list__item price-list__item--title">Розовый фильтр</td>
               <td class="price-list__item price-list__item--included">
                 <span class="price-list__title">Розовый фильтр</span>
@@ -178,7 +210,7 @@
                 <span class="visually-hidden">Включена</span>
               </td>
             </tr>
-            <tr>
+            <tr class="price-list__last-row">
               <td class="price-list__item price-list__item--title">Комментарии</td>
               <td class="price-list__item price-list__item--excluded">
                 <span class="price-list__title">Комментарии</span>
@@ -195,15 +227,15 @@
             </tr>
           </tbody>
         </table>
-        <div class="price-buttons">
-          <button type="button" class="price-buttons__base">
-            <span class="visually-hidden">Кнопка назад</span>
+        <div class="price-list__buttons switch">
+          <button type="button" class="switch__buttons">
+            <span class="visually-hidden">Смотреть тариф №1</span>
           </button>
-          <button type="button" class="price-buttons__standart price-buttons__standart--current">
-            <span class="visually-hidden">Выбранная таблица</span>
+          <button type="button" class="switch__buttons switch__buttons--current">
+            <span class="visually-hidden">Смотреть тариф №2</span>
           </button>
-          <button type="button" class="price-buttons__unlime">
-            <span class="visually-hidden">Кнопка вперед</span>
+          <button type="button" class="switch__buttons">
+            <span class="visually-hidden">Смотреть тариф №3</span>
           </button>
         </div>
       </div>
@@ -211,9 +243,9 @@
     <section class="contacts">
       <div class="contacts__wrapper wrapper">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="title title--inverted">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__main-title">Остались вопросы?<br>Свяжитесь с нами!</p>
         <ul class="contacts__list">
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--phone">
             <p class="contacts__title">Звоните:</p>
             <p class="contacts__description">
               <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
@@ -225,17 +257,20 @@
               <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
             </p>
           </li>
-          <li class="contacts__item">
-            <address class="contacts__title">Пишите:
+          <li class="contacts__item contacts__item--email">
+            <p class="contacts__title">Пишите:</p>
+            <p class="contacts__description">
               <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </address>
+            </p>
           </li>
         </ul>
       </div>
     </section>
-    <div class="map-picture">
-      <img src="img/map.png" width="320" height="200" alt="Местоположение компании.">
-    </div>
+    <section class="map-picture">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe class="map-picture__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533307!2d30.320858715930623!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1642870015058!5m2!1sru!2sru" width="320" height="200" allowfullscreen
+      title="Офис компании по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург"></iframe>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper wrapper">
@@ -277,7 +312,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

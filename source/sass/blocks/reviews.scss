@@ -1,10 +1,18 @@
 .reviews__wrapper {
   padding-top: 50px;
-  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 109px;
+    padding-bottom: 58px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-top: 72px;
+    padding-top: 193px;
     padding-bottom: 41px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 79px 63px;
+    background-position: 430px 72px;
   }
 }
 
@@ -54,8 +62,7 @@
   @media (min-width: $desktop-width) {
     padding-right: 126px;
     padding-left: 126px;
-    padding-top: 121px;
-    padding-bottom: 50px;
+    width: 790px;
   }
 }
 
@@ -70,5 +77,14 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+}
+
+.reviews__buttons {
+  padding-top: 44px;
+  padding-bottom: 60px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

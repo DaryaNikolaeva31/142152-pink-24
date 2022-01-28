@@ -1,15 +1,12 @@
 .post-form {
-  padding: 0;
   display: grid;
-  grid-template-columns: 280px;
   grid-template-areas:
     "personal"
     "achievements"
     "contact"
     "app"
     "emotions"
-    "buttons"
-    "text";
+    "buttons";
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -23,8 +20,9 @@
       "contact contact"
       "achievements achievements"
       "emotions emotions"
-      "buttons text";
+      "buttons buttons";
     column-gap: 44px;
+    // justify-content: center;
   }
 }
 
@@ -35,18 +33,50 @@
 
 .post-form__group--personal {
   grid-area: personal;
+  padding-top: 45px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 55px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 431px;
+    padding-bottom: 0;
   }
 }
 
 .post-form__group--contact {
   grid-area: contact;
+  padding-top: 32px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
 }
 
 .post-form__group--emotions {
   grid-area: emotions;
+  padding-top: 38px;
+  padding-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 64px;
+    padding-bottom: 69px;
+  }
 }
 
 .post-form__group--app {
@@ -59,21 +89,56 @@
 
 .post-form__group--achievements {
   grid-area: achievements;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .post-form__text {
   text-transform: uppercase;
   text-align: center;
   padding-top: 46px;
-  padding-bottom: 26px;
-  grid-area: text;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.post-form__text--hidden {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}
+
+.post-form__footer {
+  grid-area: buttons;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .post-form__button {
   width: 100%;
-  grid-area: buttons;
+  padding-top: 16px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+    margin-right: 140px;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 296px;
+    margin-right: 0;
   }
 }

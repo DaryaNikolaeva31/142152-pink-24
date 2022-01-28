@@ -1,8 +1,6 @@
 .price-list {
   color: $midnight;
-  background-color: $white;
-  border: 2px solid $whisper;
-  border-collapse: collapse;
+  border-spacing: 0;
 
   @media (min-width: $tablet-width) {
     padding: 70px 20px;
@@ -10,13 +8,18 @@
   }
 }
 
+.price-list__main {
+  border: 1px solid $whisper;
+  background-color: $white;
+}
+
 .price-list__heading:not(:first-child) {
   background-color: $midnight;
   color: $white;
   text-transform: uppercase;
   width: 276px;
-  border: 2px solid $whisper;
-  border-collapse: collapse;
+  border-right: 1px solid $whisper;
+  border-left: 1px solid $whisper;
   font-size: 16px;
   line-height: 30px;
 
@@ -31,33 +34,94 @@
   }
 }
 
+.price-list__heading:last-child {
+  border-right: 2px solid $midnight;
+  border-top-right-radius: 2px;
+}
+
+.price-list__heading:nth-child(2) {
+  border-left: 1px solid $midnight;
+  border-top-left-radius: 2px;
+}
+
 .price-list__prices {
   font-weight: 300;
 }
 
 .price-list__item {
-  border: 2px solid $whisper;
+  border: 1px solid $whisper;
   width: 276px;
   font-size: 14px;
   line-height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 152px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {
     width: 234px;
     font-size: 18px;
     line-height: 30px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+  }
+}
+
+.price-list__item--included::after {
+  content: "";
+  background-image: url("../img/yes.svg");
+  background-repeat: no-repeat;
+  width: 31px;
+  height: 21px;
+  position: absolute;
+  top: 19px;
+  right: 19px;
+
+  @media (min-width: $tablet-width) {
+    top: 12px;
+    right: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 19px;
+    right: 101px;
+  }
+}
+
+.price-list__item--excluded::after {
+  content: "";
+  background-image: url("../img/no.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 16px;
+  right: 19px;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    right: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 16px;
+    right: 103px;
   }
 }
 
 .price-list__title {
   @media (max-width: $mobile-width-only) {
-    display: table-cell;
-    padding-left: 22px;
-    padding-top: 18px;
-    padding-bottom: 24px;
     text-transform: uppercase;
   }
 
@@ -70,14 +134,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    padding-left: 15px;
-    padding-top: 18px;
-    padding-bottom: 17px;
     display: table-cell;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 22px;
   }
 }
 
@@ -93,4 +150,43 @@
   background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.price-list__buttons {
+  padding-top: 45px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.price-list__first-row .price-list__item {
+  border-top-width: 2px;
+  border-top-color: $midnight;
+}
+
+.price-list__first-row .price-list__item:first-child {
+  border-top-color: $whisper;
+  border-top-left-radius: 2px;
+}
+
+.price-list__item:last-child {
+  border-right-width: 2px;
+}
+
+.price-list__last-row .price-list__item {
+  border-bottom-width: 2px;
+}
+
+.price-list__last-row .price-list__item:first-child {
+  border-bottom-left-radius: 2px;
+}
+
+.price-list__last-row .price-list__item:last-child {
+  border-bottom-right-radius: 2px;
+}
+
+.price-list__item:first-child {
+  border-left-width: 2px;
 }

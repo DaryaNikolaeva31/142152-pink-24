@@ -13,12 +13,34 @@
   display: block;
 }
 
-.form-group__heading--info {
+.form-group__heading--contact {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
     margin: 0;
+    padding-right: 32px;
+    padding-left: 31px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.form-group__heading--emotions {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    padding-right: 38px;
+    padding-left: 38px;
+    margin-top: -10px;
+    display: inline-block;
+    background-color: $white;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
   }
 }
 
@@ -52,4 +74,69 @@
 .form-group__wrapper--personal {
   border: none;
   padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.form-group__wrapper--personal .form-group__field {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding-top: 56px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 58px;
+  }
+}
+
+.form-group__wrapper--contact {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 27px;
+    padding-top: 0;
+  }
+}
+
+.form-group__wrapper--contact .form-group__field {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+    padding-top: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    padding-top: 25px;
+    width: 371px;
+  }
+}
+
+.form-group__wrapper--contact .form-group__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 77px;
+  }
+}
+
+.form-group__wrapper--emotions {
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 53px;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 45px;
+  }
 }

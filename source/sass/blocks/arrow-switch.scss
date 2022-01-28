@@ -1,0 +1,31 @@
+.arrow-switch {
+  border: none;
+  position: relative;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.arrow-switch__button {
+  background-repeat: no-repeat;
+  background-size: 22px 41px;
+  border: none;
+  background-color: $white;
+  cursor: pointer;
+  width: 22px;
+  height: 41px;
+  position: absolute;
+  top: 20px;
+}
+
+.arrow-switch__button--back {
+  background-image: url("../img/arrow_back.svg");
+  left: 120px;
+}
+
+.arrow-switch__button--next {
+  background-image: url("../img/arrow_next.svg");
+  right: 120px;
+}
