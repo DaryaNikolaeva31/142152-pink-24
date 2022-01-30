@@ -7,13 +7,20 @@
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo logo" href="index.html">
-        <img src="img/pink.svg" width="74" height="23" alt="Логотип сайта Пинк.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/pink_third.svg">
+          <source media="(min-width: 660px)" srcset="img/pink_second.svg">
+          <img class="logo__image" src="img/pink_first.svg" width="74" height="23" alt="Логотип сайта Пинк.">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -58,8 +65,15 @@
         <ul class="photo-list">
           <li class="photo-list__card photo-list__card--main photo-card photo-card--main">
             <a class="photo-card__link" href="#">
-              <img class="photo-card__image photo-card__image--first" src="img/catalog/panorama-small.jpg" width="320"
-                height="137" alt="Панорамный вид с веревочной лестницы.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog/panorama_third.jpg 1x, img/catalog/panorama_third@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/catalog/panorama_second.jpg 1x, img/catalog/panorama_second@2x.jpg 2x">
+                <img class="photo-card__image photo-card__image--first" src="img/catalog/panorama_first.jpg"
+                  srcset="img/catalog/panorama_first@2x.jpg 2x" width="320" height="137"
+                  alt="Панорамный вид с веревочной лестницы.">
+              </picture>
             </a>
             <div class="photo-card__block">
               <p class="photo-card__title">Анна</p>
@@ -76,7 +90,14 @@
           </li>
           <li class="photo-list__card photo-card">
             <a class="photo-card__link" href="#">
-              <img class="photo-card__image" src="img/catalog/car-small.jpg" width="280" height="180" alt="Машина.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog/car_third.jpg 1x, img/catalog/car_third@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/catalog/car_second.jpg 1x, img/catalog/car_second@2x.jpg 2x">
+                <img class="photo-card__image" src="img/catalog/car_first.jpg" srcset="img/catalog/car_first@2x.jpg 2x"
+                  width="280" height="180" alt="Машина.">
+              </picture>
             </a>
             <div class="photo-card__block">
               <p class="photo-card__title">Левон</p>
@@ -90,7 +111,14 @@
           </li>
           <li class="photo-list__card photo-card">
             <a class="photo-card__link" href="#">
-              <img class="photo-card__image" src="img/catalog/drums-small.jpg" width="280" height="180" alt="Барабаны.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog/drums_third.jpg 1x, img/catalog/drums_third@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/catalog/drums_second.jpg 1x, img/catalog/drums_second@2x.jpg 2x">
+                <img class="photo-card__image" src="img/catalog/drums_first.jpg"
+                  srcset="img/catalog/drums_first@2x.jpg 2x" width="280" height="180" alt="Барабаны.">
+              </picture>
             </a>
             <div class="photo-card__block">
               <p class="photo-card__title">Антон</p>
@@ -104,7 +132,14 @@
           </li>
           <li class="photo-list__card photo-card">
             <a class="photo-card__link" href="#">
-              <img class="photo-card__image" src="img/catalog/windows-small.jpg" width="280" height="180" alt="Окна.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog/windows_third.jpg 1x, img/catalog/windows_third@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/catalog/windows_second.jpg 1x, img/catalog/windows_second@2x.jpg 2x">
+                <img class="photo-card__image" src="img/catalog/windows_first.jpg"
+                  srcset="img/catalog/windows_first@2x.jpg 2x" width="280" height="180" alt="Окна.">
+              </picture>
             </a>
             <div class="photo-card__block">
               <p class="photo-card__title">Борис</p>
@@ -118,8 +153,14 @@
           </li>
           <li class="photo-list__card photo-card">
             <a class="photo-card__link" href="#">
-              <img class="photo-card__image" src="img/catalog/fair-small.jpg" width="280" height="180"
-                alt="Кубанская бахча.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog/fair_third.jpg 1x, img/catalog/fair_third@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/catalog/fair_second.jpg 1x, img/catalog/fair_second@2x.jpg 2x">
+                <img class="photo-card__image" src="img/catalog/fair_first.jpg"
+                  srcset="img/catalog/fair_first@2x.jpg 2x" width="280" height="180" alt="Кубанская бахча.">
+              </picture>
             </a>
             <div class="photo-card__block">
               <p class="photo-card__title">Сергей</p>
@@ -133,7 +174,14 @@
           </li>
           <li class="photo-list__card photo-card">
             <a class="photo-card__link" href="#">
-              <img class="photo-card__image" src="img/catalog/legs-small.jpg" width="280" height="180" alt="Обрыв.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog/legs_third.jpg 1x, img/catalog/legs_third@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/catalog/legs_second.jpg 1x, img/catalog/legs_second@2x.jpg 2x">
+                <img class="photo-card__image" src="img/catalog/legs_first.jpg"
+                  srcset="img/catalog/legs_first@2x.jpg 2x" width="280" height="180" alt="Обрыв.">
+              </picture>
             </a>
             <div class="photo-card__block">
               <p class="photo-card__title">Максим</p>
@@ -147,8 +195,14 @@
           </li>
           <li class="photo-list__card photo-card">
             <a class="photo-card__link" href="#">
-              <img class="photo-card__image" src="img/catalog/plaine-small.jpg" width="280" height="180"
-                alt="Крыло самолета.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog/plaine_third.jpg 1x, img/catalog/plaine_third@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/catalog/plaine_second.jpg 1x, img/catalog/plaine_second@2x.jpg 2x">
+                <img class="photo-card__image" src="img/catalog/plaine_first.jpg"
+                  srcset="img/catalog/plaine_first@2x.jpg 2x" width="280" height="180" alt="Крыло самолета.">
+              </picture>
             </a>
             <div class="photo-card__block">
               <p class="photo-card__title">Надежда</p>
@@ -168,8 +222,14 @@
         Выкладывайте все, что накопилось в телефоне!</p>
       <form class="post__form photo-post" action="https://echo.htmlacademy.ru/" method="post">
         <div class="post__wrapper wrapper">
-          <img class="photo-post__image" src="img/catalog/road-small.jpg" width="280" height="374"
-            alt="Cнежная дорога.">
+          <div class="post__picture">
+            <picture>
+              <source media="(min-width: 660px)"
+                srcset="img/catalog/road_second.jpg 1x, img/catalog/road_second@2x.jpg 2x">
+              <img class="photo-post__image" src="img/catalog/road_first.jpg" srcset="img/catalog/road_first@2x.jpg 2x"
+                width="280" height="374" alt="Cнежная дорога.">
+            </picture>
+          </div>
           <div class="photo-post__tabs tabs" role="tablist">
             <button class="tabs__tab tabs__tab--crop" role="tab" aria-selected="true" aria-controls="crop-panel"
               id="crop-tab">

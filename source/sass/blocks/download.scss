@@ -12,11 +12,21 @@
   background-position: 0 176px, 0 0;
   padding-top: 90px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/phone_first@2x.png"),
+      url("../img/main-background_first@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/phone_second.png"),
       url("../img/main-background_second.jpg");
     background-size: 660px 545px, cover;
     background-position: -28px 193px, 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone_second@2x.png"),
+        url("../img/main-background_second@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +34,11 @@
       url("../img/main-background_third.jpg");
     background-size: 1050px 645px, cover;
     background-position: calc(50% + 124px) 159px, 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone_third@2x.png"),
+        url("../img/main-background_third@2x.jpg");
+    }
   }
 }
 

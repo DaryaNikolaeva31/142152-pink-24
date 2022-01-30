@@ -27,7 +27,7 @@
     width: 660px;
     display: grid;
     grid-template-columns: 300px 275px;
-    grid-template-rows: 189px 185px;
+    grid-template-rows: 215px 185px;
     padding-bottom: 54px;
     padding-top: 57px;
     column-gap: 47px;
@@ -43,5 +43,11 @@
     padding-left: 80px;
     padding-right: 60px;
     column-gap: 90px;
+  }
+}
+
+.post__picture {
+  @media (min-width: $tablet-width) {
+    grid-row: 1/3;
   }
 }

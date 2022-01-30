@@ -9,12 +9,22 @@
   background-position: 0 0;
   padding-top: 75px;
   min-height: 237px;
+  background-color: $black;
+  color: $white;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-background_first@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/main-background_second.jpg");
     background-size: 100% 729px;
     padding-bottom: 74px;
     min-height: 440px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-background_second@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -22,5 +32,9 @@
     background-size: 100% 853px;
     padding-bottom: 0;
     min-height: 394px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-background_third@2x.jpg");
+    }
   }
 }
