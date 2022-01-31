@@ -132,6 +132,7 @@
   width: 100%;
   padding-top: 16px;
   padding-bottom: 17px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 296px;
@@ -140,5 +141,22 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
+  }
+
+  &:hover {
+    background-color: $eucalyptus;
+  }
+
+  &:focus {
+    outline: 2px solid $cerise;
+  }
+
+  &:active {
+    background-color: $eucalyptus;
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $whisper;
   }
 }

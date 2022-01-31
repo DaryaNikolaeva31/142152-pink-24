@@ -9,6 +9,12 @@
     font-size: 50px;
     line-height: 1.35;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 166px;
+    padding-top: 62px;
+    padding-right: 164px;
+  }
 }
 
 .title--inverted {

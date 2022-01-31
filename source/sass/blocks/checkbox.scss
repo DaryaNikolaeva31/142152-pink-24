@@ -16,6 +16,8 @@
   margin-top: 23px;
   border: 2px solid $whisper;
   border-radius: 1px;
+  z-index: 2;
+  opacity: 0;
 }
 
 .checkbox__input[type="checkbox"]:checked + .checkbox__text::after {
@@ -29,6 +31,19 @@
   height: 16px;
 }
 
+.checkbox__input[type="checkbox"]:checked:hover + .checkbox__text::before {
+  border-color: $midnight;
+}
+
+.checkbox__input[type="checkbox"]:checked:focus + .checkbox__text::before {
+  outline: 2px solid $cerise;
+  outline-offset: 2px;
+}
+
+.checkbox__input[type="checkbox"]:checked:active + .checkbox__text::before {
+  border-color: $cerise;
+}
+
 .checkbox__input[type="checkbox"] + .checkbox__text::before {
   content: "";
   position: absolute;
@@ -40,4 +55,16 @@
   border: 2px solid $whisper;
   border-radius: 1px;
   cursor: pointer;
+}
+
+.checkbox__input[type="checkbox"]:hover + .checkbox__text::before {
+  border-color: $midnight;
+}
+
+.checkbox__input[type="checkbox"]:focus + .checkbox__text::before {
+  outline: 2px solid $cerise;
+}
+
+.checkbox__input[type="checkbox"]:active + .checkbox__text::before {
+  border-color: $cerise;
 }

@@ -9,7 +9,23 @@
 
 .footer-developer__icon {
   display: block;
-  color: $cerise;
+  fill: $cerise;
+
+  &:hover {
+    fill: $midnight;
+  }
+
+  &:active {
+    fill: $midnight;
+    opacity: 0.3;
+  }
+}
+
+.footer-developer__link {
+  &:focus {
+    outline: 2px solid $cerise;
+    outline-offset: 3px;
+  }
 }
 
 .footer-developer__text {

@@ -16,6 +16,14 @@
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
+
+  &:hover {
+    border-color: $midnight;
+  }
+
+  &:focus {
+    border-color: $cerise;
+  }
 }
 
 .field__input::placeholder {

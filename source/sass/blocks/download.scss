@@ -79,6 +79,20 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  &:hover {
+    background-color: $white;
+    color: $cerise;
+  }
+
+  &:focus {
+    outline: 2px solid $cerise;
+  }
+
+  &:active {
+    background-color: $white;
+    color: rgba($cerise, 0.3);
+  }
 }
 
 .download__list {
@@ -109,6 +123,11 @@
   height: 56px;
   background-repeat: no-repeat;
   background-position: center;
+
+  &:focus {
+    outline: 2px solid $cerise;
+    outline-offset: 2px;
+  }
 }
 
 .download__link--ios {

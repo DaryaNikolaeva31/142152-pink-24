@@ -13,12 +13,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 }
 
 .photo-card__block {
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -5px;
+  }
 }
 
 .photo-card__title {
@@ -43,6 +47,8 @@
   display: block;
   flex-grow: 1;
   padding-left: 3px;
+  font-size: 12px;
+  line-height: 24px;
 }
 
 .photo-card__subtext {
@@ -81,6 +87,11 @@
   @media (min-width: $tablet-width) {
     left: 260px;
   }
+
+  @media (min-width: $tablet-width) {
+    left: 256px;
+    top: 18px;
+  }
 }
 
 .photo-card--main .photo-card__subtext {
@@ -91,19 +102,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 535px;
-    left: 745px;
+    top: 520px;
+    left: 762px;
   }
 }
 
 .photo-card--main .photo-card__subtext::before {
   @media (min-width: $tablet-width) {
-    top: 8px;
-    left: 155px;
+    top: 16px;
+    left: 134px;
   }
 }
 
 .photo-card--main {
+  z-index: 0;
+
   @media (min-width: $tablet-width) {
     position: relative;
   }
@@ -124,8 +137,9 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 27px;
-    padding-bottom: 27px;
+    padding-bottom: 0;
     padding-right: 27px;
+    margin-top: -7px;
   }
 }
 
@@ -134,7 +148,7 @@
   justify-content: center;
 
   &:hover {
-    filter: grayscale(50%);
+    filter: grayscale(80%);
   }
 }
 
@@ -168,8 +182,14 @@
 }
 
 .photo-card__button {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
+  padding-top: 12px;
+
+  &:focus {
+    outline: 2px solid $cerise;
+    outline-offset: -1px;
+  }
 }
 
 .photo-card--main::before {
@@ -187,6 +207,7 @@
   position: absolute;
   top: 0;
   left: 140px;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     top: 57px;
@@ -194,7 +215,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
-    left: 140px;
+    top: 53px;
+    left: 800px;
   }
 }
