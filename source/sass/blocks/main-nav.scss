@@ -3,6 +3,7 @@
   font-size: 18px;
   line-height: 32px;
   display: flex;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     font-weight: 400;
@@ -23,9 +24,9 @@
   width: 50px;
   height: 24px;
   border: none;
-  position: absolute;
-  top: 21px;
-  right: 20px;
+  // position: absolute;
+  // top: 21px;
+  // right: 20px;
   cursor: pointer;
   z-index: 2;
 
@@ -53,7 +54,9 @@
 }
 
 .main-nav--opened .main-nav__icon-open {
-  display: none;
+  position: absolute;
+  top: 21px;
+  right: 20px;
 }
 
 .main-nav--opened .main-nav__icon-close {
@@ -84,7 +87,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    gap: 78px;
+    gap: 83px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

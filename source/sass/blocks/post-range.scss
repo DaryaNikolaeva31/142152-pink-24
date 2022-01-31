@@ -37,7 +37,7 @@
     padding-left: 40px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 85px;
   }
 }
@@ -137,14 +137,15 @@
     background-color: $midnight;
   }
 
-  &::-webkit-slider-runnable-thumb {
+  &::-webkit-slider-thumb {
     height: 14px;
     width: 14px;
     border: 2px solid $cerise;
     background-color: $white;
-    color: $white;
     border-radius: 10px;
     cursor: pointer;
+    margin-top: -7px;
+    padding: 0;
   }
 
   &::-moz-range-track {
@@ -168,5 +169,10 @@
 
   @media (min-width: $desktop-width) {
     width: 288px;
+  }
+
+  &::-webkit-slider-runnable-thumb,
+  &::-moz-range-thumb:active {
+    background-color: $cerise;
   }
 }
