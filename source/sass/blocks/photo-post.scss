@@ -6,6 +6,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 26px;
     padding-bottom: 0;
+    padding-left: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,6 +28,20 @@
   text-align: center;
   color: $cerise;
   margin-bottom: 12px;
+
+  &:hover {
+    background-color: $cerise;
+    color: $white;
+  }
+
+  &:focus {
+    outline: 2px solid $cerise;
+  }
+
+  &:active {
+    background-color: $cerise;
+    color: rgba($white, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
@@ -53,6 +68,20 @@
   line-height: 18px;
   text-align: center;
 
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid $cerise;
+  }
+
+  &:active {
+    background-color: $midnight;
+    color: $white;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 260px;
   }
@@ -78,9 +107,10 @@
 .photo-post__scale {
   @media (min-width: $tablet-width) {
     padding-left: 51px;
-    padding-top: 20px;
-    padding-bottom: 34px;
+    // padding-top: 20px;
+    // padding-bottom: 34px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }

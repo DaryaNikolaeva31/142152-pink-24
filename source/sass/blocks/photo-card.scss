@@ -170,6 +170,11 @@
 .photo-card__button {
   font-size: 14px;
   line-height: 24px;
+
+  &:focus {
+    outline: 2px solid $cerise;
+    outline-offset: -1px;
+  }
 }
 
 .photo-card--main::before {

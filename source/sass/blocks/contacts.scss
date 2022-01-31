@@ -108,13 +108,19 @@
   font-weight: 300;
   color: $cerise;
   font-style: normal;
-  // padding-top: 13px;
 
-  @media (min-width: $tablet-width) {
-    // padding-top: 17px;
+  &:hover {
+    color: $midnight;
+    text-decoration: underline;
   }
 
-  @media (min-width: $desktop-width) {
-    // padding-top: 34px;
+  &:focus {
+    outline: 2px solid $cerise;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: $midnight;
+    opacity: 0.3;
   }
 }

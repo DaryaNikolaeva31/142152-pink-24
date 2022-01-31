@@ -18,6 +18,18 @@
   height: 41px;
   position: absolute;
   top: 20px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 2px solid $cerise;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .arrow-switch__button--back {

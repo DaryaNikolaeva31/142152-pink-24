@@ -40,6 +40,18 @@
   padding: 20px;
   width: 48px;
   height: 48px;
+
+  &:hover {
+    border-color: $black;
+  }
+
+  &:focus {
+    outline: 2px solid $cerise;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .footer-social__link--twitter {

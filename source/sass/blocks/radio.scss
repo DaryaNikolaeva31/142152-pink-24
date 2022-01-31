@@ -23,6 +23,19 @@
   background-color: $white;
   border-radius: 50%;
   border: 2px solid $whisper;
+  cursor: pointer;
+}
+
+.radio__input[type="radio"]:hover + .radio__text::before {
+  outline: 2px solid $midnight;
+}
+
+.radio__input[type="radio"]:focus + .radio__text::before {
+  outline: 2px solid $cerise;
+}
+
+.radio__input[type="radio"]:active + .radio__text::before {
+  outline: 2px solid $cerise;
 }
 
 .radio__input[type="radio"]:checked + .radio__text::after {
@@ -34,6 +47,18 @@
   height: 15px;
   background-color: $cerise;
   border-radius: 50%;
+}
+
+.radio__input[type="radio"]:checked:hover + .radio__text::after {
+  outline: 2px solid $midnight;
+}
+
+.radio__input[type="radio"]:checked:focus + .radio__text::before {
+  outline: 2px solid $cerise;
+}
+
+.radio__input[type="radio"]:checked:active + .radio__text::before {
+  outline: 2px solid $cerise;
 }
 
 .radio__input {

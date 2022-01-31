@@ -21,4 +21,35 @@
   @media (min-width: $desktop-width) {
     padding: 0;
   }
+
+  &:focus {
+    outline: 2px solid $cerise;
+  }
+}
+
+.page-footer__pink-logo {
+  fill: $midnight;
+
+  &:hover {
+    fill: $cerise;
+  }
+
+  &:active {
+    fill: $midnight;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__pink-logo--visible-tablet {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__pink-logo--visible-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

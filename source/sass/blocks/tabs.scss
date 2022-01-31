@@ -17,6 +17,10 @@
   margin-bottom: 39px;
   background-color: $white-smoke;
 
+  &:focus {
+    outline: 2px solid $cerise;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
     margin-right: 29px;
@@ -30,14 +34,24 @@
   }
 }
 
-.tabs__tab--crop {
-  background-image: url("../img/crop.svg");
+.tabs__icon {
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.tabs__tab--fill {
-  background-image: url("../img/fill.svg");
+.tabs__icon--crop {
+  fill: $cerise;
 }
 
-.tabs__tab--contrast {
-  background-image: url("../img/contrast.svg");
+.tabs__icon--fill {
+  fill: $midnight;
+  opacity: 0.3;
+}
+
+.tabs__icon--contrast {
+  fill: $midnight;
+  opacity: 0.3;
 }

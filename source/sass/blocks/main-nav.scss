@@ -12,10 +12,14 @@
 }
 
 .main-nav__toggle {
-  background-image: url("../img/open-menu-btn.svg");
-  background-size: 50px 24px;
-  background-repeat: no-repeat;
-  background-color: transparent;
+  fill: $white;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__icon-open {
   width: 50px;
   height: 24px;
   border: none;
@@ -25,16 +29,21 @@
   cursor: pointer;
   z-index: 2;
 
-  // &:hover {
-  //   fill: $cerise;
-  // }
+  &:hover {
+    fill: $cerise;
+  }
 
-  // &:active {
-  //   fill: rgba($cerise, 0.3);
-  // }
+  &:focus {
+    outline: 2px solid $cerise;
+    outline-offset: -1px;
+  }
+
+  &:active {
+    fill: rgba($cerise, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
-    top: 21px;
+    top: 42px;
     right: 20px;
   }
 
@@ -43,17 +52,27 @@
   }
 }
 
-.main-nav--opened .main-nav__toggle {
-  background-image: url("../img/close-menu-btn.svg");
-  background-size: 23px 23px;
-  background-position: 100% 50%;
-  // &:hover {
-  //   fill: $cerise;
-  // }
+.main-nav--opened .main-nav__icon-open {
+  display: none;
+}
 
-  // &:active {
-  //   fill: rgba($cerise, 0.3);
-  // }
+.main-nav--opened .main-nav__icon-close {
+  &:hover {
+    fill: $cerise;
+  }
+
+  &:focus {
+    outline: 2px solid $cerise;
+    outline-offset: -1px;
+  }
+
+  &:active {
+    fill: rgba($cerise, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -163,5 +182,19 @@
   @media (min-width: $desktop-width) {
     text-transform: none;
     padding: 0;
+  }
+
+  &:hover {
+    color: $cerise;
+  }
+
+  &:focus {
+    outline: 2px solid $cerise;
+    outline-offset: -1px;
+  }
+
+  &:active {
+    color: $white;
+    opacity: 0.3;
   }
 }

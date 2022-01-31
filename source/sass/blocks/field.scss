@@ -16,6 +16,18 @@
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
+
+  &:hover {
+    outline: 2px solid $midnight;
+  }
+
+  &:focus {
+    outline: 2px solid $cerise;
+  }
+
+  &:active {
+    outline: 2px solid $cerise;
+  }
 }
 
 .field__input::placeholder {
