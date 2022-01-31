@@ -22,7 +22,7 @@
   @media (min-width: $desktop-width) {
     width: 410px;
     height: 71px;
-    padding-left: 85px;
+    padding-left: 64px;
     margin: 0 -40px;
     padding-top: 25px;
     padding-bottom: 20px;
@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 85px;
+    padding-left: 64px;
   }
 }
 
@@ -73,9 +73,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-size: 48px 48px;
-    top: 10px;
-    left: 0;
+    background-size: 44px 44px;
+    top: 16px;
+    left: -26px;
   }
 }
 
@@ -95,8 +95,8 @@
 
   @media (min-width: $desktop-width) {
     background-size: 48px 43px;
-    top: 12px;
-    left: 5px;
+    top: 18px;
+    left: -25px;
   }
 }
 
@@ -116,8 +116,8 @@
 
   @media (min-width: $desktop-width) {
     background-size: 32px 32px;
-    top: 18px;
-    left: 6px;
+    top: 23px;
+    left: -20px;
   }
 }
 
@@ -125,12 +125,7 @@
   color: $midnight;
   height: 2px;
   width: 240px;
-
-  &::-webkit-outer-spin-buttn,
-  &::-webkit-inner-spin-butto {
-    appearance: none;
-    margin: 0;
-  }
+  appearance: none;
 
   &::-webkit-slider-runnable-track {
     height: 2px;
@@ -138,6 +133,7 @@
   }
 
   &::-webkit-slider-thumb {
+    appearance: none;
     height: 14px;
     width: 14px;
     border: 2px solid $cerise;
@@ -171,7 +167,10 @@
     width: 288px;
   }
 
-  &::-webkit-slider-runnable-thumb,
+  &::-webkit-slider-thumb:active {
+    background-color: $cerise;
+  }
+
   &::-moz-range-thumb:active {
     background-color: $cerise;
   }

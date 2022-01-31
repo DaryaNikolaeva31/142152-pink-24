@@ -18,15 +18,11 @@
   font-family: "Open Sans", "Arial", sans-serif;
 
   &:hover {
-    outline: 2px solid $midnight;
+    border-color: $midnight;
   }
 
   &:focus {
-    outline: 2px solid $cerise;
-  }
-
-  &:active {
-    outline: 2px solid $cerise;
+    border-color: $cerise;
   }
 }
 

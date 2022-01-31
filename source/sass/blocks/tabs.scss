@@ -16,9 +16,13 @@
   margin-top: 42px;
   margin-bottom: 39px;
   background-color: $white-smoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:focus {
     outline: 2px solid $cerise;
+    outline-offset: 2px;
   }
 
   @media (min-width: $tablet-width) {

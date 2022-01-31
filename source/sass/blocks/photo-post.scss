@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 183px 183px;
     column-gap: 44px;
-    padding-top: 107px;
+    padding-top: 148px;
   }
 }
 
@@ -53,6 +53,7 @@
     width: 183px;
     margin-right: 0;
     margin-top: 0;
+    margin-left: 5px;
   }
 }
 
@@ -101,6 +102,11 @@
     padding-left: 20px;
     width: 300px;
     height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
+    padding-left: 0;
   }
 }
 
