@@ -10,11 +10,15 @@
 
 .advantages__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  column-gap: 5px;
   padding: 0;
   margin: 0;
+  margin-top: 6px;
   text-align: center;
-  padding-top: 53px;
-  padding-bottom: 325px;
+  padding-top: 78px;
+  padding-bottom: 270px;
   background-image: url("../img/iphone-smile_first.png");
   background-repeat: no-repeat;
   background-size: 157px 277px;
@@ -26,11 +30,11 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    padding-bottom: 49px;
+    padding-bottom: 29px;
     padding-left: 310px;
-    padding-top: 122px;
+    padding-top: 41px;
     background-image: url("../img/iphone-smile_second.png");
-    background-position: 0 50px;
+    background-position: 0 -6px;
     background-size: 268px 481px;
 
     @media (min-resolution: 2dppx) {
@@ -50,13 +54,45 @@
   }
 }
 
+.advantages__block {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 10px;
+  }
+}
+
+.advantages__main-title {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: $black;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 1.35;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 1.35;
+    padding-left: 166px;
+    padding-top: 55px;
+    padding-right: 164px;
+  }
+}
+
 .advantages__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: $black;
-  margin: 0;
-  padding-bottom: 24px;
+
+  // @media (min-width: $tablet-width) {
+  //   font-size: 40px;
+  //   line-height: 1.35;
+  //   margin-bottom: 24px;
+  // }
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
@@ -70,10 +106,10 @@
   line-height: 24px;
   color: $midnight;
   margin: 0;
-  padding-bottom: 43px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 46px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,10 +119,10 @@
 }
 
 .advantages__wrapper {
-  padding-top: 46px;
+  padding-top: 7px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 58px;
+    padding-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,6 +131,12 @@
 }
 
 .advantages__item {
+  padding-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 11px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 366px;
     background-repeat: no-repeat;

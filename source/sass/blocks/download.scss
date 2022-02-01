@@ -21,7 +21,7 @@
     background-image: url("../img/phone_second.png"),
       url("../img/main-background_second.jpg");
     background-size: 660px 545px, cover;
-    background-position: -28px 193px, 0 0;
+    background-position: -1px 183px, 0 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/phone_second@2x.png"),
@@ -42,16 +42,31 @@
   }
 }
 
+.download__block {
+  width: 240px;
+  margin-top: 0;
+  margin-left: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 52px;
+    margin-left: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 114px;
+  }
+}
+
 .download__description {
   background-color: $blue-charcoal;
   margin-top: 314px;
-  padding-top: 28px;
+  padding-top: 23px;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
     padding-top: 0;
-    margin-top: 39px;
-    padding-bottom: 80px;
+    margin-top: 26px;
+    padding-bottom: 82px;
   }
 }
 
@@ -64,8 +79,8 @@
   border: 3px solid $white;
   border-radius: 29px;
   color: $white;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   padding-left: 35px;
   padding-right: 35px;
   font-weight: 700;
@@ -106,6 +121,9 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
+    padding-top: 12px;
+    padding-left: 13px;
+    padding-right: 15px;
   }
 }
 
@@ -113,7 +131,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 38px;
+  padding-top: 32px;
   padding-bottom: 31px;
 }
 
@@ -145,7 +163,8 @@
 .download__subtitle {
   padding: 0;
   margin: 0;
-  padding-bottom: 38px;
+  margin-top: -12px;
+  padding-bottom: 31px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -154,6 +173,7 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
+    margin-top: 1px;
   }
 }
 

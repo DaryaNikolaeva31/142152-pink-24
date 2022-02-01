@@ -14,12 +14,12 @@
 .main-nav__toggle {
   background-color: transparent;
   fill: $white;
-  width: 50px;
+  width: 62px;
   height: 24px;
   border: none;
   position: absolute;
-  top: 25px;
-  right: 20px;
+  top: 20px;
+  right: 14px;
   cursor: pointer;
   z-index: 2;
   display: flex;
@@ -40,7 +40,7 @@
 
   @media (min-width: $tablet-width) {
     top: 42px;
-    right: 20px;
+    right: 16px;
   }
 
   @media (min-width: $desktop-width) {

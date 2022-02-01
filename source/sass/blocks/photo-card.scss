@@ -9,19 +9,26 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding-bottom: 31px;
+    margin-top: 14px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 20px;
+    min-height: 555px;
   }
 }
 
 .photo-card__block {
   display: flex;
+  margin-top: -5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -7px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-top: -5px;
+    margin-top: -3px;
   }
 }
 
@@ -88,7 +95,7 @@
     left: 260px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     left: 256px;
     top: 18px;
   }
@@ -97,8 +104,8 @@
 .photo-card--main .photo-card__subtext {
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 529px;
-    left: 425px;
+    top: 522px;
+    left: 442px;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,6 +126,8 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    padding-bottom: 0;
+    margin-top: -1px;
   }
 }
 
@@ -126,20 +135,23 @@
   margin: 0;
   padding-bottom: 25px;
   padding-left: 17px;
-  padding-right: 17px;
+  padding-right: 10px;
   flex-grow: 1;
+  margin-top: -7px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 27px;
+    padding-bottom: 43px;
     padding-left: 30px;
     padding-right: 30px;
+    min-height: 30px;
+    margin-bottom: -15px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 27px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
     padding-right: 27px;
-    margin-top: -7px;
+    min-height: 30px;
   }
 }
 
@@ -157,6 +169,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;
+    margin-top: 28px;
     width: 300px;
     height: 300px;
   }
@@ -174,10 +187,12 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;
     height: 509px;
+    margin-top: -15px;
   }
 
   @media (min-width: $desktop-width) {
     height: 506px;
+    margin-top: 0;
   }
 }
 
@@ -189,6 +204,10 @@
   &:focus {
     outline: 2px solid $cerise;
     outline-offset: -1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -32px;
   }
 }
 
@@ -210,7 +229,7 @@
   z-index: 3;
 
   @media (min-width: $tablet-width) {
-    top: 57px;
+    top: 55px;
     left: 480px;
   }
 
