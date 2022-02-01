@@ -10,11 +10,15 @@
 
 .advantages__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  column-gap: 5px;
   padding: 0;
   margin: 0;
+  margin-top: -3px;
   text-align: center;
-  padding-top: 53px;
-  padding-bottom: 325px;
+  padding-top: 0;
+  padding-bottom: 217px;
   background-image: url("../img/iphone-smile_first.png");
   background-repeat: no-repeat;
   background-size: 157px 277px;

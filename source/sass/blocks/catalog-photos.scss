@@ -16,13 +16,17 @@
   text-align: center;
   color: $midnight;
   margin: 0;
-  padding-top: 54px;
-  padding-bottom: 60px;
+  padding-top: 44px;
+  padding-bottom: 29px;
+  padding-left: 17px;
+  padding-right: 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    padding-top: 100px;
-    padding-bottom: 85px;
+    padding-top: 92px;
+    padding-bottom: 77px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media (min-width: $desktop-width) {

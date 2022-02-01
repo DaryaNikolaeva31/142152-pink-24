@@ -19,6 +19,11 @@
 
 .photo-card__block {
   display: flex;
+  margin-top: -5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -7px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-top: -5px;
@@ -88,7 +93,7 @@
     left: 260px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     left: 256px;
     top: 18px;
   }
@@ -97,8 +102,8 @@
 .photo-card--main .photo-card__subtext {
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 529px;
-    left: 425px;
+    top: 522px;
+    left: 442px;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,8 +131,9 @@
   margin: 0;
   padding-bottom: 25px;
   padding-left: 17px;
-  padding-right: 17px;
+  padding-right: 10px;
   flex-grow: 1;
+  margin-top: -7px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 27px;
@@ -139,7 +145,6 @@
     padding-left: 27px;
     padding-bottom: 0;
     padding-right: 27px;
-    margin-top: -7px;
   }
 }
 
@@ -189,6 +194,10 @@
   &:focus {
     outline: 2px solid $cerise;
     outline-offset: -1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
   }
 }
 
