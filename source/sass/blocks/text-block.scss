@@ -2,13 +2,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-start;
-    width: 240px;
-    margin-top: 100px;
-    margin-left: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 114px;
   }
 }
 
@@ -32,6 +25,7 @@
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 48px;
+    padding-top: 62px;
   }
 
   @media (min-width: $desktop-width) {

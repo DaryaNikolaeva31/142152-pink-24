@@ -12,8 +12,8 @@
   font-size: 30px;
   line-height: 30px;
   color: $black;
-  padding-top: 102px;
-  padding-bottom: 24px;
+  padding-top: 99px;
+  padding-bottom: 12px;
   margin: 0;
 
   @media (min-width: $desktop-width) {
@@ -22,12 +22,19 @@
   }
 }
 
+.information__subtitle {
+  display: block;
+  padding-top: 7px;
+}
+
 .information__description {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 24px;
   color: $midnight;
-  padding-bottom: 24px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  margin: 0;
 
   @media (min-width: $desktop-width) {
     padding-bottom: 47px;
@@ -38,8 +45,8 @@
   text-decoration-line: underline;
   color: $cerise;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 24px;
   padding-bottom: 29px;
 
   @media (min-width: $desktop-width) {
@@ -51,5 +58,6 @@
   padding-left: 310px;
   background-image: url("../img/24.svg");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 0 54px;
+  padding-bottom: 14px;
 }

@@ -28,11 +28,11 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-
 // HTML
 
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -40,6 +40,7 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/script.js')
+    .pipe(terser())
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -49,12 +50,12 @@ const scripts = () => {
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh())
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/img'));
 }
 
 const copyImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/img'));
 }
 
 // WebP
@@ -64,7 +65,7 @@ export const createWebp = () => {
     .pipe(squoosh({
       webp: {}
     }))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/img/catalog'));
 }
 
 // SVG
@@ -90,13 +91,13 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/*.webmanifest',
   ], {
     base: 'source'
   })
     .pipe(gulp.dest('build'))
   done();
 }
-
 
 // Clean
 
@@ -146,11 +147,9 @@ export const build = gulp.series(
     svg,
     sprite,
     createWebp
-  ),
-);
+  ),);
 
 // Default
-
 
 export default gulp.series(
   clean,

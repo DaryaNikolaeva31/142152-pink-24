@@ -1,6 +1,6 @@
 .contacts__wrapper {
-  padding-top: 50px;
-  padding-bottom: 41px;
+  padding-top: 30px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     padding-top: 55px;
@@ -19,6 +19,7 @@
   line-height: 29px;
   text-align: center;
   margin: 0;
+  padding-top: 8px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -35,12 +36,12 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 45px;
+  padding-top: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 33px;
+  row-gap: 18px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

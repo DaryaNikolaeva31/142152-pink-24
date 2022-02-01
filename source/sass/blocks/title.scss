@@ -8,13 +8,11 @@
   @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: 1.35;
-    padding-top: 67px;
+    // padding-top: 62px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 166px;
-    padding-top: 62px;
-    padding-right: 164px;
+    padding-top: 55px;
   }
 }
 
@@ -22,7 +20,7 @@
   color: $midnight;
   margin: 0;
   background-color: $white;
-  padding-bottom: 70px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -38,7 +36,7 @@
 
 .title__sub--first {
   padding-bottom: 29px;
-  margin-top: -5px;
+  margin-top: 34px;
   display: block;
 
   @media (min-width: $tablet-width) {

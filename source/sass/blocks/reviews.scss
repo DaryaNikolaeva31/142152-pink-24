@@ -1,5 +1,5 @@
 .reviews__wrapper {
-  padding-top: 50px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     padding-top: 109px;
@@ -36,7 +36,8 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
+    padding-top: 34px;
+    font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,11 +53,12 @@
   text-align: center;
   color: $midnight;
   margin: 0;
-  padding-top: 31px;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     order: -1;
+    font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,8 +83,19 @@
 }
 
 .reviews__buttons {
-  padding-top: 44px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  display: grid;
+  grid-template-columns: 10px 10px 10px;
+  column-gap: 14px;
+  padding-left: 110px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 36px;
+    justify-content: center;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
