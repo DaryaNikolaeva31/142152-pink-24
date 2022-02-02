@@ -14,9 +14,13 @@
   }
 }
 
+.contest__form {
+  margin-top: -14px;
+}
+
 .contest__title {
   padding: 0;
-  padding-top: 54px;
+  padding-top: 45px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -25,7 +29,7 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 0;
     padding-right: 60px;
     padding-left: 60px;
@@ -34,7 +38,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 70px;
+    padding-bottom: 83px;
+    padding-right: 70px;
+    padding-left: 70px;
   }
 }
 

@@ -8,7 +8,7 @@
 .text-block--inner {
   justify-content: center;
   margin: 0;
-  padding-bottom: 51px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -31,5 +31,6 @@
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
+    padding-top: 9px;
   }
 }

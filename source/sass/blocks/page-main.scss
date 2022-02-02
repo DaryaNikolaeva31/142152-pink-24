@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-size: 100% 462px;
   background-position: 0 0;
-  padding-top: 83px;
+  padding-top: 85px;
   min-height: 237px;
   background-color: $black;
   color: $white;
@@ -21,6 +21,7 @@
     background-size: 100% 729px;
     padding-bottom: 74px;
     min-height: 440px;
+    padding-top: 141px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main-background_second@2x.jpg");
@@ -32,6 +33,7 @@
     background-size: 100% 853px;
     padding-bottom: 0;
     min-height: 394px;
+    padding-top: 83px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main-background_third@2x.jpg");

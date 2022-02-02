@@ -14,6 +14,7 @@
   @media (min-width: $tablet-width) {
     border: 2px solid $whisper;
     border-radius: 1px;
+    padding-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,12 +24,12 @@
 
 .form-сheckbox__list {
   list-style: none;
+  display: grid;
   padding: 0;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     padding-left: 45px;
-    display: grid;
     padding-right: 45px;
   }
 
@@ -45,10 +46,10 @@
   font-size: 14px;
   line-height: 18px;
   background-color: $white-smoke;
-  margin-top: 42px;
-  margin-bottom: 44px;
   padding-left: 40px;
-  padding-right: 20px;
+  padding-right: 37px;
+  padding-top: 38px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -58,6 +59,7 @@
     margin-left: auto;
     padding-left: 32px;
     padding-right: 32px;
+    padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,9 +72,7 @@
 }
 
 .form-сheckbox__item:nth-child(3n-2) {
-  @media (min-width: $tablet-width) {
-    order: -2;
-  }
+  order: -2;
 
   @media (min-width: $desktop-width) {
     order: 0;
@@ -80,9 +80,7 @@
 }
 
 .form-сheckbox__item:nth-child(3n-1) {
-  @media (min-width: $tablet-width) {
-    order: -1;
-  }
+  order: -1;
 
   @media (min-width: $desktop-width) {
     order: 0;

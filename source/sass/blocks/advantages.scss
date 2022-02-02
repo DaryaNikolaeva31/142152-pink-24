@@ -10,15 +10,14 @@
 
 .advantages__list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  column-gap: 5px;
+  display: grid;
+  row-gap: 28px;
+  place-content: center;
   padding: 0;
-  margin: 0;
-  margin-top: 6px;
+  margin: 10px;
   text-align: center;
-  padding-top: 78px;
-  padding-bottom: 270px;
+  padding-top: 28px;
+  padding-bottom: 319px;
   background-image: url("../img/iphone-smile_first.png");
   background-repeat: no-repeat;
   background-size: 157px 277px;
@@ -30,11 +29,11 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    padding-bottom: 29px;
-    padding-left: 310px;
-    padding-top: 41px;
+    padding-bottom: 9px;
+    padding-left: 301px;
+    padding-top: 67px;
     background-image: url("../img/iphone-smile_second.png");
-    background-position: 0 -6px;
+    background-position: -10px 1px;
     background-size: 268px 481px;
 
     @media (min-resolution: 2dppx) {
@@ -46,7 +45,7 @@
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 68px;
+    gap: 44px;
     padding-top: 0;
     padding-bottom: 49px;
     padding-left: 0;
@@ -56,8 +55,21 @@
 
 .advantages__block {
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding-top: 10px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 14px;
+  }
+}
+
+.advantages__block--tablet {
+  @media (min-width: $tablet-width) {
+    padding-top: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -67,19 +79,19 @@
   font-weight: 300;
   color: $black;
   margin: 0;
+  display: block;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 1.35;
-    margin-bottom: 24px;
+    margin-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 1.35;
-    padding-left: 166px;
     padding-top: 55px;
-    padding-right: 164px;
   }
 }
 
@@ -87,12 +99,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-
-  // @media (min-width: $tablet-width) {
-  //   font-size: 40px;
-  //   line-height: 1.35;
-  //   margin-bottom: 24px;
-  // }
+  margin: 0;
+  padding-bottom: 15px;
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
@@ -119,22 +127,23 @@
 }
 
 .advantages__wrapper {
-  padding-top: 7px;
+  padding-top: 39px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 7px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 77px;
+    // padding-top: 77px;
   }
 }
 
 .advantages__item {
-  padding-bottom: 45px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 11px;
+    padding-bottom: 0;
+    padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
