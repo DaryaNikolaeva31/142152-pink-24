@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 22px;
+    padding-top: 0;
   }
 }
 
@@ -112,6 +112,10 @@
     padding-top: 0;
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .form-group__wrapper--contact .form-group__field {
@@ -147,6 +151,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 0;
+    padding-bottom: 45px;
   }
 }

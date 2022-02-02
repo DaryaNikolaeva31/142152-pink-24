@@ -33,7 +33,7 @@
 
 .post-form__group--personal {
   grid-area: personal;
-  padding-top: 26px;
+  padding-top: 40px;
   padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
@@ -58,7 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
+    padding-top: 19px;
     padding-bottom: 50px;
   }
 }
@@ -75,7 +75,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 64px;
-    padding-bottom: 69px;
+    padding-bottom: 62px;
   }
 }
 

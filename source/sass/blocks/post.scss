@@ -1,3 +1,9 @@
+.post {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 24px;
+  }
+}
+
 .post__form {
   background-color: $white-smoke;
 }
@@ -7,13 +13,13 @@
   line-height: 30px;
   text-align: center;
   margin: 0;
-  padding-top: 49px;
-  padding-bottom: 52px;
+  padding-top: 44px;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    padding-top: 73px;
-    padding-bottom: 78px;
+    padding-top: 64px;
+    padding-bottom: 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,13 +30,12 @@
 
 .post__wrapper {
   @media (min-width: $tablet-width) {
-    width: 660px;
     display: grid;
     grid-template-columns: 300px 275px;
     grid-template-rows: 215px 185px;
     padding-bottom: 54px;
     padding-top: 57px;
-    column-gap: 47px;
+    column-gap: 27px;
   }
 
   @media (min-width: $desktop-width) {
