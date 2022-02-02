@@ -1,11 +1,6 @@
 .price-list {
   color: $midnight;
   border-spacing: 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 70px 20px;
-    margin: 0;
-  }
 }
 
 .price-list__main {
@@ -22,17 +17,19 @@
   border-left: 1px solid $whisper;
   font-size: 16px;
   line-height: 30px;
-  padding-top: 10px;
-  padding-bottom: 27px;
+  padding-top: 14px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 152px;
+    padding-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
     width: 233px;
     font-size: 18px;
     line-height: 30px;
+    padding-bottom: 22px;
   }
 }
 
@@ -48,6 +45,11 @@
 
 .price-list__prices {
   font-weight: 300;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .price-list__item {
@@ -151,7 +153,7 @@
 .price-list__heading--hit {
   background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 3px;
 }
 
 .price-list__buttons {

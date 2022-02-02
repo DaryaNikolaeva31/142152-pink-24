@@ -33,7 +33,7 @@
     background-image: url("../img/phone_third.png"),
       url("../img/main-background_third.jpg");
     background-size: 1050px 645px, cover;
-    background-position: calc(50% + 124px) 159px, 0 0;
+    background-position: calc(50% + 71px) 208px, 0 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/phone_third@2x.png"),
@@ -68,6 +68,10 @@
     margin-top: 26px;
     padding-bottom: 82px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 90px;
+  }
 }
 
 .download__button {
@@ -93,6 +97,8 @@
     font-size: 21px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 
   &:hover {
@@ -124,6 +130,11 @@
     padding-top: 12px;
     padding-left: 13px;
     padding-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
+    padding-bottom: 20px;
   }
 }
 

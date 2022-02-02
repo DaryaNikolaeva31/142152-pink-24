@@ -17,7 +17,7 @@
   width: 22px;
   height: 41px;
   position: absolute;
-  top: 20px;
+  top: 29px;
 
   &:hover {
     opacity: 0.6;
@@ -34,10 +34,10 @@
 
 .arrow-switch__button--back {
   background-image: url("../img/arrow_back.svg");
-  left: 120px;
+  left: 0;
 }
 
 .arrow-switch__button--next {
   background-image: url("../img/arrow_next.svg");
-  right: 120px;
+  right: 0;
 }

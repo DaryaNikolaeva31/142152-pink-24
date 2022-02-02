@@ -35,8 +35,8 @@
 }
 
 .title__sub--first {
-  padding-bottom: 29px;
-  margin-top: 34px;
+  padding-bottom: 33px;
+  margin-top: 7px;
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -50,6 +50,8 @@
 
 .title__sub--second {
   @media (min-width: $tablet-width) {
+    padding-right: 39px;
+    display: block;
     padding-left: 39px;
   }
 

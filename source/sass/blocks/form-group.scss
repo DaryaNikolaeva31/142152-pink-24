@@ -23,6 +23,11 @@
     padding-left: 31px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -50,7 +55,7 @@
   line-height: 30px;
   color: $cerise;
   text-transform: uppercase;
-  padding-bottom: 29px;
+  padding-bottom: 22px;
 }
 
 .form-group__item {
@@ -87,20 +92,29 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    padding-top: 56px;
+    padding-top: 54px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
-    padding-bottom: 58px;
+    padding-top: 12px;
+    padding-bottom: 42px;
   }
 }
 
 .form-group__wrapper--contact {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 27px;
     padding-top: 0;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 20px;
   }
 }
 
@@ -115,7 +129,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    padding-top: 25px;
+    padding-top: 28px;
     width: 371px;
   }
 }
