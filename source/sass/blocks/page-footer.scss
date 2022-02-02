@@ -8,6 +8,10 @@
     align-items: center;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
 }
 
 .page-footer__logo {
@@ -66,7 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
-    padding-bottom: 75px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
