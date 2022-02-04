@@ -60,7 +60,6 @@
 
 .form-group__item {
   @media (min-width: $tablet-width) {
-    width: 100%;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -137,7 +136,8 @@
 .form-group__wrapper--contact .form-group__list {
   @media (min-width: $desktop-width) {
     display: flex;
-    gap: 77px;
+    gap: 74px;
+    flex-wrap: wrap;
   }
 }
 

@@ -10,6 +10,9 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="page__body">
@@ -139,7 +142,6 @@
       <h1 class="title wrapper">Фотографии<br>
         пользователей</h1>
     </div>
-    </section>
     <section class="catalog-photos">
       <div class="catalog-photos__wrapper wrapper">
         <h2 class="visually-hidden">Реальные фото пользователей, использующих приложение</h2>
@@ -303,6 +305,7 @@
     <section class="post">
       <p class="post__title">Затмите их всех! <br>
         Выкладывайте все, что накопилось в телефоне!</p>
+      <h2 class="visually-hidden">Сделайте пост</h2>
       <form class="post__form photo-post" action="https://echo.htmlacademy.ru/" method="post">
         <div class="post__wrapper wrapper">
           <div class="post__picture">
@@ -317,24 +320,21 @@
             </picture>
           </div>
           <div class="photo-post__tabs tabs" role="tablist">
-            <button type="button" class="tabs__tab" role="tab" aria-selected="true" aria-controls="crop-panel"
-              id="crop-tab">
+            <button type="button" class="tabs__tab" role="tab" aria-selected="true" id="crop-tab">
               <svg class="tabs__icon tabs__icon--crop" aria-hidden="true" focusable="false" width="44" height="44"
                 viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#crop"></use>
               </svg>
               <span class="visually-hidden">Кадрирование изображения</span>
             </button>
-            <button type="button" class="tabs__tab" role="tab" aria-selected="false" aria-controls="fill-panel"
-              id="fill-tab">
+            <button type="button" class="tabs__tab" role="tab" aria-selected="false" id="fill-tab">
               <svg class="tabs__icon tabs__icon--fill" aria-hidden="true" focusable="false" width="48" height="43"
                 viewBox="0 0 48 43" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#fill"></use>
               </svg>
               <span class="visually-hidden">Заливка изображения</span>
             </button>
-            <button type="button" class="tabs__tab" role="tab" aria-selected="false" aria-controls="contrast-panel"
-              id="contrast-tab">
+            <button type="button" class="tabs__tab" role="tab" aria-selected="false" id="contrast-tab">
               <svg class="tabs__icon tabs__icon--contrast" aria-hidden="true" focusable="false" width="32" height="32"
                 viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#contrast"></use>
@@ -345,17 +345,17 @@
           <div class="photo-post__scale post-range">
             <label class="post-range__scale post-range__scale--crop post-range__scale--current">
               <span class="visually-hidden">Выберите степень кадрирования изображения.</span>
-              <input class="post-range__bar" type="range" min="0" max="100" step="1" value="86" id="crop-tab"
+              <input class="post-range__bar" type="range" min="0" max="100" step="1" value="86" id="croptab"
                 name="crop">
             </label>
             <label class="post-range__scale post-range__scale--fill">
               <span class="visually-hidden">Выберите степень заливки изображения.</span>
-              <input class="post-range__bar" type="range" min="0" max="100" step="1" value="13" id="fill-tab"
+              <input class="post-range__bar" type="range" min="0" max="100" step="1" value="13" id="filltab"
                 name="fill">
             </label>
             <label class="post-range__scale post-range__scale--contrast">
               <span class="visually-hidden">Выберите степень контраста изображения.</span>
-              <input class="post-range__bar" type="range" min="0" max="100" step="1" value="50" id="contrast-tab"
+              <input class="post-range__bar" type="range" min="0" max="100" step="1" value="50" id="contrasttab"
                 name="contrast">
             </label>
           </div>
